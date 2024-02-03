@@ -80,4 +80,51 @@ export class PageProjectGrid3ColsComponent implements OnInit {
       image: "assets/images/projects/portrait/pic9.jpg"
     }
   ]
+  // Workedprojects = {
+  //   title: "All Projects",
+  //   projects: [
+  //     {
+  //       category: "col-one",
+  //       title: "Chair Furniture",
+  //       place: "Muscat, Sultanate of Oman",
+  //       image: "assets/images/projects/portrait/pic1.jpg"
+  //     },
+  //     {
+  //       category: "col-two",
+  //       title: "Chair Furniture",
+  //       place: "Muscat, Sultanate of Oman",
+  //       image: "assets/images/projects/portrait/pic2.jpg"
+  //     },
+  //     {
+  //       category: "col-three",
+  //       title: "Chair Furniture",
+  //       place: "Muscat, Sultanate of Oman",
+  //       image: "assets/images/projects/portrait/pic3.jpg"
+  //     },
+  //     {
+  //       category: "col-four",
+  //       title: "Chair Furniture",
+  //       place: "Muscat, Sultanate of Oman",
+  //       image: "assets/images/projects/portrait/pic4.jpg"
+  //     },
+  //     {
+  //       category: "col-three",
+  //       title: "Chair Furniture",
+  //       place: "Muscat, Sultanate of Oman",
+  //       image: "assets/images/projects/portrait/pic5.jpg"
+  //     },
+  //     {
+  //       category: "col-two",
+  //       title: "Chair Furniture",
+  //       place: "Muscat, Sultanate of Oman",
+  //       image: "assets/images/projects/portrait/pic6.jpg"
+  //     },
+  //     {
+  //       category: "col-one",
+  //       title: "Chair Furniture",
+  //       place: "Muscat, Sultanate of Oman",
+  //       image: "assets/images/projects/portrait/pic7.jpg"
+  //     }
+  //   ]
+  // }
 }

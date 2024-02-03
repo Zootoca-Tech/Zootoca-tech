@@ -19,8 +19,8 @@ export class Home1Component implements OnInit {
 
   about = {
     title: "About us",
-    subtitle: "We are competitive in architecture solutions",
-    description: "Landscape design is a process of developing practical and pleasing outdoor living space. there are six principles of design that have been used by artists for centuries throughout all art forms, painting and floral design.",
+    subtitle: "We are competitive",
+    description: "Welcome to Zootoca Technologies, a dynamic and innovative digital media company dedicated to shaping the future of content creation, distribution, and engagement. Our passion lies in harnessing the power of technology to transform ideas into captivating digital experiences.",
     images: [
       {
         image: "assets/images/about-slider/1.jpg"
@@ -45,17 +45,17 @@ export class Home1Component implements OnInit {
     work: [
       {
         image: "assets/images/pic1.jpg",
-        title: "Interior Design",
+        title: "SEO",
         serial: "01"
       },
       {
         image: "assets/images/pic2.jpg",
-        title: "Architectur",
+        title: "Cutting-Edge Content Creation",
         serial: "02"
       },
       {
         image: "assets/images/pic3.jpg",
-        title: "Floor Plan",
+        title: "Tech-Driven Solutions",
         serial: "03"
       }
     ],
