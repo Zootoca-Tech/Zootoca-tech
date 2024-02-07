@@ -115,6 +115,7 @@ import { SectionShopRelatedProductsComponent } from './sections/shop/detail/sect
 import { ElementsBox11Component } from './elements/boxes/elements-box11/elements-box11.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { SectionShopHeaderComponent } from './sections/shop/section-shop-header/section-shop-header.component';
+import { TestimonialsComponent } from './sections/home/home1/section-testimonials1/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -229,7 +230,8 @@ import { SectionShopHeaderComponent } from './sections/shop/section-shop-header/
     SectionShopRelatedProductsComponent,
     ElementsBox11Component,
     SafePipe,
-    SectionShopHeaderComponent
+    SectionShopHeaderComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

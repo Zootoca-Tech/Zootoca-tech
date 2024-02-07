@@ -1,0 +1,34 @@
+<div class="col-xl-6 col-lg-6 bg-white mx-auto bg-repeat" style="background-image:url(assets/images/background/bg-12.jpg)">
+            
+    <div class="sx-right-part mobile-page-padding  p-t80 p-b50">
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-left">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">{{data.testimonials.title}}</h3>
+                </div>
+            </div>
+        </div>                   
+        <!-- TITLE END -->
+        
+         <!-- TESTIMONIAL START -->   
+         <div class="owl-carousel testimonial-home number-slider">
+            <div class="item" *ngFor="let object of data.testimonials.content">
+                <div class="testimonial-2  hover-animation-1">
+                    <div class="testimonial-detail clearfix">
+                        <div class="testimonial-pic shadow scale-in-center"><img src="{{object.image}}" width="100" height="100" alt=""></div>
+                        <h4 class="testimonial-name">{{object.name}}</h4>
+                        <span class="testimonial-position">{{object.role}}</span>
+                        <span class="fa fa-quote-right"></span>
+                    </div>                                    
+                    <div class="testimonial-text bg-white  shadow-sm">
+                        
+                        <p>{{object.quote}}</p>
+                    </div>
+                </div>
+            </div>                                                                                                                                                                                                                       
+        </div>   
+                                                                         
+    </div>
+                                          
+</div> 
