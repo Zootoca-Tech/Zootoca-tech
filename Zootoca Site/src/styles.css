@@ -18,27 +18,31 @@
 @keyframes rainbowFade {
   0% {
     background: #e8d7cb;
+    opacity: 100;
   }
  
   20% {
     background: #e8d7cb;
+    opacity: 100;
   }
  
   40% {
     background: #e8d7cb;
+    opacity: 100;
   }
   
   60% {
     background: #e8d7cb;
+    opacity: 100;
   }
  
   80% {
     background: #e8d7cb;
-		opacity: 0.8;
+		opacity: 100;
   }
  
   100% {
     background: #e8d7cb;
-    opacity: 0;
+    opacity: 100;
   }
 }
