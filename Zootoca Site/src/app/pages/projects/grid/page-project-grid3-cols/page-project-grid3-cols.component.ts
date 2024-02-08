@@ -58,43 +58,43 @@ export class PageProjectGrid3ColsComponent implements OnInit {
       image: "assets/images/projects/portrait/sm ads.jpg"
     },
     {
-      category: "cat-4",
+      category: "cat-6",
       title: "Marketing Strategy",
       place: "",
       image: "assets/images/projects/portrait/marketing.png"
     },
     {
-      category: "cat-3",
+      category: "cat-7",
       title: "Graphic Design",
       place: "",
       image: "assets/images/projects/portrait/graphic design.jpeg"
     },
     {
-      category: "cat-2",
+      category: "cat-8",
       title: "Video Editing",
       place: "Muscat, Sultanate of Oman",
       image: "assets/images/projects/portrait/video editing.png"
     },
     {
-      category: "cat-1",
+      category: "cat-9",
       title: "Influencer Marketing",
       place: "",
       image: "assets/images/projects/portrait/influencer marketing.png"
     },
     {
-      category: "cat-1",
+      category: "cat-10",
       title: "Event Management",
       place: "",
       image: "assets/images/projects/portrait/events.png"
     },
     {
-      category: "cat-1",
+      category: "cat-11",
       title: "Content Writing",
       place: "",
       image: "assets/images/projects/portrait/Content writing.jpg"
     },
        {
-      category: "cat-1",
+      category: "cat-12",
       title: "Infographics",
       place: "",
       image: "assets/images/projects/portrait/infographics.jpg"
