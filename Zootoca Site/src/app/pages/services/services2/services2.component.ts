@@ -29,33 +29,35 @@ export class Services2Component implements OnInit {
     title2: "Services",
     services: [
       {
+
         serial: "01",
         icon: "flaticon-sketch",
-        title: "Plans and Projects",
-        description: "We provide a range of architectural 3D modeling services to our customers to aid the design, planning and..."
+        title: "SEO",
+        description: "We provide a range of architectural 3D modeling services to our customers to aid the Web Digital Media Group is a leading Android UI/UX App development company that delivers end-to-end Android App development services to open up new opportunities for business. Being a top company, we specialize to transform your unique ideas into real-time Android applications. We will help you unlock wonderful experience on different types of devices – foldable devices, tablets, smartphones, auto/cars, wearables/smartwatch, and television. No matter, whatever size and shape of your device is, you can have more engaging and fast experience. We, as the most trusted Android App development company, use latest tools to enable innovation. Our company is committed to unlocking the power of Android such as Android developer tools, security protocols, libraries, Android architecture components, and Android framework.",
       },
       {
+
         serial: "02",
-        icon: "flaticon-stairs",
-        title: "Interior",
+        icon: "flaticon-window",
+        title: "WebApp Development",
         description: "Analysis and planning services that help both the client and architects to work out the forthcoming project..."
       },
       {
         serial: "03",
         icon: "flaticon-window",
-        title: "Exterior",
+        title: "Social Media Marketing",
         description: "We offer comprehensive Architectural Engineering Services including Interior design, Master planning, 3D modeling..."
       },
       {
         serial: "04",
         icon: "flaticon-skyline",
-        title: "Architecture",
+        title: "Event Management",
         description: "Project management is the process by which our team plans and executes your project. We will develop it..."
       },
       {
         serial: "05",
         icon: "flaticon-bed",
-        title: "Furniture",
+        title: "Photography",
         description: "Our team also provides consultations on all architectural issues, even if you need specific info about working..."
       },
       {
@@ -76,19 +78,19 @@ export class Services2Component implements OnInit {
 
   counter = [
     {
-      count: "24",
+      count: "5",
       title: "Our Experience"
     },
     {
-      count: "340",
+      count: "30",
       title: "Project Taken"
     },
     {
-      count: "86",
+      count: "136",
       title: "Awards Won"
     },
     {
-      count: "36K",
+      count: "10K",
       title: "Twitter Followers"
     }
   ]

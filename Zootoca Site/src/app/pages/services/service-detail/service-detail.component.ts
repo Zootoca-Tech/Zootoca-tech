@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-service-detail',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service-detail.component.css']
 })
 export class ServiceDetailComponent implements OnInit {
+  title: any;
+  description: any;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      // Access the title and description parameters
+      this.title = params['title'];
+      this.description = params['description'];
+      console.log('Titleeeeeeeeeeee:', this.title);
+      console.log('Descriptionnnnnnnnnnnnn:', this.description);
+      // Use the title and description in your component as needed
+    });
   }
 
   banner = {
