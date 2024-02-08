@@ -1,7 +1,44 @@
-/* cursor */
-.trail { 
-    position: absolute;
-    height: 6px; width: 6px;
-    border-radius: 3px;
-    background: #d7b39a;
+/* cursor function */
+
+.happyTrail {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #e8d7cb;
+  border-radius: 50%;
+  opacity: 0.5;
+  pointer-events: none;
+  filter: blur(0px);
+  
+  animation-duration: 0.5s;
+  animation-name: rainbowFade;
+  animation-timing-function: ease;
+}
+
+@keyframes rainbowFade {
+  0% {
+    background: #e8d7cb;
   }
+ 
+  20% {
+    background: #e8d7cb;
+  }
+ 
+  40% {
+    background: #e8d7cb;
+  }
+  
+  60% {
+    background: #e8d7cb;
+  }
+ 
+  80% {
+    background: #e8d7cb;
+		opacity: 0.8;
+  }
+ 
+  100% {
+    background: #e8d7cb;
+    opacity: 0;
+  }
+}
