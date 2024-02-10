@@ -15,6 +15,10 @@ export class SectionServices1Component implements OnInit {
   wholedata: any;
   serviceTitle: any;
   serviceDescription: any;
+  image: any;
+  initialCardsToShow: number = 6;
+  incrementBy: number = 6;
+
 
   
   constructor(private router: Router) { }
@@ -31,9 +35,18 @@ export class SectionServices1Component implements OnInit {
       console.log('ServiceTitle:', this.serviceTitle);
       this.serviceDescription = selectedItem.description;
       console.log('desc:', this.serviceDescription);
-      this.router.navigate(['/services/service-detail'], {
+      this.image = selectedItem.image;
+      this.router.navigate(['section-page-banner'], {
         queryParams: { title: this.serviceTitle, description: this.serviceDescription }
+      });
+      this.router.navigate(['/services/service-detail'], {
+        queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image}
       });
     }
   }
+
+  loadMoreCards() {
+    this.initialCardsToShow += this.incrementBy;
+  }
+
 }

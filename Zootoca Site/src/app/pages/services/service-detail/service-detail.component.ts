@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ServiceDetailComponent implements OnInit {
   title: any;
   description: any;
+  image: any;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -18,6 +19,7 @@ export class ServiceDetailComponent implements OnInit {
       // Access the title and description parameters
       this.title = params['title'];
       this.description = params['description'];
+      this.image = params['img'];
       console.log('Titleeeeeeeeeeee:', this.title);
       console.log('Descriptionnnnnnnnnnnnn:', this.description);
       // Use the title and description in your component as needed
@@ -25,9 +27,7 @@ export class ServiceDetailComponent implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/4.jpg",
-    title: "Service Details",
-    description: "The essence of interior design will always be about people and how they live. It is about the realities of what makes for an attractive, civilized.",
+    image: "assets/images/banner/allService.jpg",
     page: "Service detail"
   }
 

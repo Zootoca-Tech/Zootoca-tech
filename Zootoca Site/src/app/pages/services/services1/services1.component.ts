@@ -13,7 +13,7 @@ export class Services1Component implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/6.jpg",
+    image: "assets/images/banner/allService.jpg",
     title: "Service Style one",
     description: "The essence of interior design will always be about people and how they live. It is about the realities of what makes for an attractive, civilized.",
     page: "Services 1"

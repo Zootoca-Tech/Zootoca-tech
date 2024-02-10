@@ -13,7 +13,7 @@
               <div class="row">
                   
                 <!-- Block one -->
-                <div class="col-lg-4 col-md-6 col-sm-12 m-b30" *ngFor="let object of data.services">
+                <div class="col-lg-4 col-md-6 col-sm-12 m-b30"  *ngFor="let object of data.services.slice(0, initialCardsToShow)">
                     
                     <div class="sx-icon-box-wraper  icon-count-2-outer">
                         <div class="icon-count-2 bg-white">
@@ -34,6 +34,9 @@
                         </div>
                     </div>                            	
                 </div>
+                <div class="col-lg-12 text-center"   *ngIf="initialCardsToShow < data.services.length">
+                    <button class="site-button btn-half" (click)="loadMoreCards()"> More </button>
+                  </div>
                                                                                                                                                            
             </div>
         </div>
