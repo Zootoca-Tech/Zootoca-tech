@@ -115,6 +115,8 @@ import { SectionShopRelatedProductsComponent } from './sections/shop/detail/sect
 import { ElementsBox11Component } from './elements/boxes/elements-box11/elements-box11.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { SectionShopHeaderComponent } from './sections/shop/section-shop-header/section-shop-header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from './sections/home/home1/section-testimonials1/testimonials/testimonials.component';
 
 @NgModule({
@@ -236,7 +238,10 @@ import { TestimonialsComponent } from './sections/home/home1/section-testimonial
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
