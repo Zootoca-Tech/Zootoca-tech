@@ -34,7 +34,6 @@
   text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
     }
 
     .flaticon-sketch:before { content: "\f100"; }
@@ -43,6 +42,7 @@
 .flaticon-skyline:before { content: "\f103"; }
 .flaticon-bed:before { content: "\f104"; }
 .flaticon-door:before { content: "\f105"; }
+// .flaticon-web:before{content:"\f050";}
     
     $font-Flaticon-sketch: "\f100";
     $font-Flaticon-stairs: "\f101";
@@ -50,3 +50,4 @@
     $font-Flaticon-skyline: "\f103";
     $font-Flaticon-bed: "\f104";
     $font-Flaticon-door: "\f105";
+    // $font-Flaticon-web: "\f050";
