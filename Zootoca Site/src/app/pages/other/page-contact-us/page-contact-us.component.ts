@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { EmailService } from 'src/web-api-services/email-service.service';
+
 
 @Component({
   selector: 'app-page-contact-us',
@@ -6,11 +10,93 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-contact-us.component.css']
 })
 export class PageContactUsComponent implements OnInit {
+  contactusform: FormGroup;
+  con: any;
+  submitted: boolean = false;
 
-  constructor() { }
+  constructor(private _fb: FormBuilder,
+    private router: Router,
+    //private Toastr: NotificationService,
+    private _emailservice: EmailService) { 
+
+    this.contactusform = this._fb.group(
+      {
+        from: ['',[Validators.required]],
+        to:[''],//Add to email address(hardcore)
+        Message:[''],
+       //subject as service
+        Service:['0',[Validators.required]]
+      });
+
+  }
+
+
 
   ngOnInit(): void {
   }
+
+  get f(): { [key: string]: AbstractControl } {
+    return this.contactusform.controls;
+  }
+
+  OnSubmit(){
+    this.con = this.contactusform.value;
+    this._emailservice.sendemail(this.contactusform.value).subscribe(data=>{
+      console.log("trigged0",this.contactusform.value)
+      console.log("emailsend",data)
+    })
+  }
+
+  //this is service list binded with html//
+  servicelist = [
+    {
+      id: "01",
+      title: "Events",
+    },
+    {
+      id: "02",
+      title: "SEO",
+    },
+    {
+      id: "03",
+      title: "Google Ads",
+    },
+    {
+      id: "04",
+      title: "Mobile Apps",
+    },
+    {
+      id: "05",
+      title: "Social Media Ads ",
+    },
+    {
+      id: "06",
+      title: "Marketing Stratergy",
+    },
+    {
+      id: "06",
+      title: "Graphic Design",
+    },
+    {
+      id: "07",
+      title: "Event Management",
+    },
+    {
+      id: "08",
+      title: "Video Editing",
+    },
+    {
+      id: "09",
+      title: "Influencer Marketing",
+    },
+    {
+      id: "10",
+      title: "Content Writing",
+    },
+   
+  
+  ]
+
 
   banner = {
     image: "assets/images/banner/9.jpg",

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-section-page-banner',
@@ -8,10 +9,17 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SectionPageBannerComponent implements OnInit {
 
   @Input() data: any;
-  
-  constructor() { }
+  title: any;
+  description: any;
 
-  ngOnInit(): void {
-  }
+  constructor(private route: ActivatedRoute) { }
 
+    ngOnInit(): void {
+      this.route.queryParams.subscribe((params:any)=>{
+        console.log(params);
+        this.title= params.title;
+        this.description =params.description;
+
+      })
+    }
 }

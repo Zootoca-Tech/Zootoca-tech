@@ -2,6 +2,7 @@
        	
     <!-- HEADER START -->
     <app-header1></app-header1>
+    <router-outlet></router-outlet>
     <!-- HEADER END -->
     
     <!-- CONTENT START -->
@@ -10,14 +11,14 @@
         <!-- INNER PAGE BANNER -->
         <app-section-page-banner [data]="banner"></app-section-page-banner>
         <!-- INNER PAGE BANNER END -->
-         
+
         <!-- SECTION CONTENT START -->
         <div class="section-full p-t80 p-b50 mobile-page-padding">
             <div class="container">
                 
                 <!-- GALLERY CONTENT START -->
                  <div class="row">
-                    <div class="col-lg-4 col-md-12 sticky_column">
+                    <!-- <div class="col-lg-4 col-md-12 sticky_column">
                         <div class="about4-section m-b20 bg-gray p-a20">
                             <div class="widget widget_services">
                                 <h4 class="widget-title">More Services</h4>
@@ -52,15 +53,19 @@
                             </div>
                      
                         </div>
-                    </div>
+                    </div> -->
                     
-                    <div class="col-lg-8 col-md-12">
+                    <div class="col-lg-12 col-md-12">
                         <div class="section-content">
-                            <div class="service-single-block m-b30">
+                            <div class="service-single-block m-b30"  *ngIf="title && description">
+                                <h3 class="m-t30 sx-tilte">{{title}}</h3>
+                                <p>{{description}}</p>
+                                <img src="{{image}}" alt="">
                                 <div class="sx-media">
                                     <img src="{{service.thumb}}" alt="">
                                 </div>
-                                <h3 class="m-t30 sx-tilte">{{service.title}}</h3>
+
+                                <h3 class="m-t30 sx-tilte" >{{service.title}}</h3>
                                 <div [innerHTML]='service.description'></div>                                
                             
                             </div>

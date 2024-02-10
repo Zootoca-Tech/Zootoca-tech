@@ -14,7 +14,7 @@ declare var initializeOnLoad: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'inteshape';
+  title = 'Zootoca Technologies';
 
   constructor(private router: Router,private viewportScroller: ViewportScroller) {}
 

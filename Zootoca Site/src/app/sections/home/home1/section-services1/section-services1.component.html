@@ -13,7 +13,7 @@
               <div class="row">
                   
                 <!-- Block one -->
-                <div class="col-lg-4 col-md-6 col-sm-12 m-b30" *ngFor="let object of data.services">
+                <div class="col-lg-4 col-md-6 col-sm-12 m-b30"  *ngFor="let object of data.services.slice(0, initialCardsToShow)">
                     
                     <div class="sx-icon-box-wraper  icon-count-2-outer">
                         <div class="icon-count-2 bg-white">
@@ -23,15 +23,20 @@
                             </div>
                             <div class="icon-content">
                                 <h4 class="sx-tilte">{{object.title}}</h4>
-                                <p>{{object.description}}</p>
+
+                                <p *ngIf="!showFullDescription">{{object.description | slice:0:100}}<span *ngIf="object.description.length > 100">...</span></p>
+                                <p *ngIf="showFullDescription">{{object.description}}</p>
                                 <div class="text-left">
-                                    <a routerLink="/services/services-detail" class="site-button-link">Read More</a>
+                                    <a  (click)="toggleDescription(object.serial)" class="site-button-link">Read More</a>
+                                    <!-- <a routerLink="/services/services-detail" class="site-button-link">Read More</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>                            	
-                    
                 </div>
+                <div class="col-lg-12 text-center"   *ngIf="initialCardsToShow < data.services.length">
+                    <button class="site-button btn-half" (click)="loadMoreCards()"> More </button>
+                  </div>
                                                                                                                                                            
             </div>
         </div>

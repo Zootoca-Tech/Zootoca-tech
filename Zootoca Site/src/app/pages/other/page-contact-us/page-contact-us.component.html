@@ -1,73 +1,99 @@
-<div class="page-wraper">  
-      	
+<div class="page-wraper">
+
     <!-- HEADER START -->
     <app-header1></app-header1>
     <!-- HEADER END -->
-    
+
     <!-- CONTENT START -->
     <div class="page-content">
-    
+
         <!-- INNER PAGE BANNER -->
         <app-section-page-banner [data]="banner"></app-section-page-banner>
         <!-- INNER PAGE BANNER END -->
-         
+
         <!-- SECTION CONTENTG START -->
         <div class="section-full p-tb80 inner-page-padding">
             <!-- LOCATION BLOCK-->
             <div class="container">
-            
+
                 <!-- GOOGLE MAP & CONTACT FORM -->
                 <div class="section-content">
                     <!-- CONTACT FORM-->
                     <div class="row">
                         <div class="col-lg-8 col-md-12 col-sm-12">
-                            <form class="contact-form cons-contact-form bg-gray p-a30" method="post" action="form-handler.php">
+                            <form class="contact-form cons-contact-form bg-gray p-a30" [formGroup]="contactusform"
+                                (ngSubmit)="OnSubmit()">
                                 <div class="contact-one">
-                                
+
                                     <!-- TITLE START -->
                                     <div class="section-head">
                                         <div class="sx-separator-outer separator-left">
-                                            <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                                            <div class="sx-separator bg-white bg-moving bg-repeat-x"
+                                                style="background-image:url(assets/images/background/cross-line2.png)">
                                                 <h3 class="sep-line-one">Form</h3>
                                             </div>
                                         </div>
-                                    </div>                                        
-                                    <!-- TITLE END -->                                     
-                                                                    
-                                    <div class="form-group">
-                                        <input name="username" type="text" required class="form-control" placeholder="Name">
                                     </div>
-                               
+                                    <!-- TITLE END -->
+
+                                    <!-- <div class="form-group">
+                                        <input name="username" type="text" required class="form-control" formControlName="Name" placeholder="Name">
+                                    </div> -->
+
                                     <div class="form-group">
-                                        <input name="email" type="text" class="form-control" required placeholder="Email">
+                                        <label>From</label>
+                                        <input type="text" class="form-control" formControlName="from" required placeholder="Email Id"
+                                        [ngClass]="{ 'is-invalid': submitted && f['from'].errors }">
                                     </div>
-                               
+
+                                    <!-- <div class="form-group">
+                                        <textarea name="Subject" rows="4" class="form-control " formControlName="Subject" required placeholder="Subject"></textarea>
+                                    </div> -->
+
                                     <div class="form-group">
-                                        <textarea name="message" rows="4" class="form-control " required placeholder="Message"></textarea>
+                                        <Label>Service</Label>
+                                        <select type="text" class="form-control" formControlName="Service" placeholder="Subject Select a service"
+                                        [ngClass]="{ 'is-invalid': submitted && f['Service'].errors }">
+                                            <option value="0" selected>Select a Service</option>
+                                            <option *ngFor="let object of servicelist" [value]="object.title">
+                                                {{object.title}}
+                                            </option>
+                                        </select>
                                     </div>
-                                
-                                    <div class="text-right">
+                                    <div class="form-group">
+                                        <label>Message</label>
+                                        <textarea  rows="4" class="form-control" formControlName="Message" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <!-- <div class="text-right">
                                         <button name="submit" type="submit" value="Submit" class="site-button btn-half"><span> submit</span>
                                                 
-                                        </button>
+                                        </button> -->
+                                    <div class="text-right">
+                                        <button class="site-button btn-half"><span> submit</span></button>
+                                        <!-- <button class="btn btn-danger ml-3" (click)="cancelAction()">cancel</button> -->
+
                                     </div>
+
 
                                 </div>
                             </form>
-                        </div>                        
+                        </div>
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <div class="contact-info block-shadow bg-white bg-center p-a40" style="background-image:url(assets/images/background/bg-map.png)">
+                            <div class="contact-info block-shadow bg-white bg-center p-a40"
+                                style="background-image:url(assets/images/background/bg-map.png)">
 
                                 <div>
                                     <!-- TITLE START -->
                                     <div class="section-head">
                                         <div class="sx-separator-outer separator-left">
-                                            <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                                            <div class="sx-separator bg-white bg-moving bg-repeat-x"
+                                                style="background-image:url(assets/images/background/cross-line2.png)">
                                                 <h3 class="sep-line-one">Info</h3>
                                             </div>
                                         </div>
-                                    </div>                                        
-                                    <!-- TITLE END -->                                                                    
+                                    </div>
+                                    <!-- TITLE END -->
                                     <div class="sx-icon-box-wraper left p-b30">
                                         <div class="icon-xs"><i class="fa fa-phone"></i></div>
                                         <div class="icon-content">
@@ -75,7 +101,7 @@
                                             <p>+91 7904987617</p>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="sx-icon-box-wraper left p-b30">
                                         <div class="icon-xs"><i class="fa fa-envelope"></i></div>
                                         <div class="icon-content">
@@ -83,34 +109,35 @@
                                             <p>zootocatechnologies@gmail.com</p>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="sx-icon-box-wraper left">
                                         <div class="icon-xs"><i class="fa fa-map-marker"></i></div>
                                         <div class="icon-content">
                                             <h5 class="m-t0">Address info</h5>
-                                            <p>New No 20, Old No 67, Anna Street, Tiruvanmiyur, Kanchipuram, Chennai City Corporation, Tamil Nadu, India, 600041.</p>
+                                            <p>New No 20, Old No 67, Anna Street, Tiruvanmiyur, Kanchipuram, Chennai
+                                                City Corporation, Tamil Nadu, India, 600041.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
-                
-                
+
+
             </div>
-       </div>
+        </div>
         <!-- <div class="gmap-outline">
             <div id="gmap_canvas2" class="google-map"></div>
             <google-map  height="500px" width="100%"></google-map>
         </div>          -->
         <!-- SECTION CONTENT END -->
-        
+
     </div>
     <!-- CONTENT END -->
 
     <!-- FOOTER START -->
     <app-footer1 [data]='footerData'></app-footer1>
     <!-- FOOTER END -->
-    
+
 </div>
