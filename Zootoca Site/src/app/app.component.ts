@@ -1,6 +1,8 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { ViewportScroller } from '@angular/common';
+
 
 declare var jQuery: any;
 declare var initializeOnReady: any;
@@ -14,8 +16,16 @@ declare var initializeOnLoad: any;
 export class AppComponent implements AfterViewInit {
   title = 'inteshape';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private viewportScroller: ViewportScroller) {}
 
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.viewportScroller.scrollToPosition([0, 0]);
+      }
+    });
+  }
+  
   ngAfterViewInit(): void {
     this.router.events
     .pipe(
