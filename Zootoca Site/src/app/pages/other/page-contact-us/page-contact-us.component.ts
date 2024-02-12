@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EmailService } from 'src/web-api-services/email-service.service';
-
+//import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-page-contact-us',
@@ -13,17 +13,23 @@ export class PageContactUsComponent implements OnInit {
   contactusform: FormGroup;
   con: any;
   submitted: boolean = false;
+  isLoading: boolean = false;
 
   constructor(private _fb: FormBuilder,
     private router: Router,
+   // private modalService: NgbModal,
     //private Toastr: NotificationService,
     private _emailservice: EmailService) { 
 
     this.contactusform = this._fb.group(
       {
+        UserName:['',[Validators.required]],
         from: ['',[Validators.required]],
-        to:[''],//Add to email address(hardcore)
+        to:['akashks3733@gmail.com'],//Add to email address(hardcore)
         Message:[''],
+        ContactNumber:['',[Validators.required]],
+        // Address:[''],
+        Result:[''],
        //subject as service
         Service:['0',[Validators.required]]
       });
@@ -40,10 +46,10 @@ export class PageContactUsComponent implements OnInit {
   }
 
   OnSubmit(){
-    this.con = this.contactusform.value;
     this._emailservice.sendemail(this.contactusform.value).subscribe(data=>{
-      console.log("trigged0",this.contactusform.value)
-      console.log("emailsend",data)
+      console.log("trigged0",this.contactusform.value);
+      console.log("emailsend",data);
+      this.isLoading = false;
     })
   }
 

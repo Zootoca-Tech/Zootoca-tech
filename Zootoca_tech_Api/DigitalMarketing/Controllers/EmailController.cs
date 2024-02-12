@@ -14,26 +14,9 @@ namespace DigitalMarketing.Controllers
         public IActionResult SendEmail(EmailModel model)
         {
             try
-            {
-                
-                MailMessage message = new MailMessage();
-                message.From = new MailAddress(model.From);
-                message.To.Add(model.To);
-                //subjectis loaded with service offered
-                message.Subject = model.Service;
-                message.Body = model.Message;
-                message.IsBodyHtml = true;
-                //EmailService service = model.Service;
-
-                // Configure the SMTP client
-                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
-                smtpClient.Port = 587; 
-                smtpClient.EnableSsl = true; 
-                smtpClient.Credentials = new NetworkCredential("akashks6341@gmail.com", "jdqt afoj cihq remp");
-                //smtpClient.Credentials = new NetworkCredential("user@gmail.com", "Secret pwd");
-
-                // Send the email
-                smtpClient.Send(message);
+            { 
+               MailMessage message = model.CreateMailMessage();
+                SendEmailMessage(message);
 
                 return Ok("Email sent successfully");
             }
@@ -42,7 +25,18 @@ namespace DigitalMarketing.Controllers
                 return BadRequest(new { Message = ex.Message.ToString() });
             }
         }
+
+        private void SendEmailMessage(MailMessage message)
+        {
+            // Configure the SMTP client
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
+            smtpClient.Port = 587;
+            smtpClient.EnableSsl = true;
+            smtpClient.Credentials = new NetworkCredential("akashks6341@gmail.com", "jdqt afoj cihq remp");
+            //smtpClient.Credentials = new NetworkCredential("user@gmail.com", "Secret pwd");
+
+            // Send the email
+            smtpClient.Send(message);
+        }
     }
-
-
 }

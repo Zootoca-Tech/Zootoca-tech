@@ -39,21 +39,40 @@
                                     <!-- <div class="form-group">
                                         <input name="username" type="text" required class="form-control" formControlName="Name" placeholder="Name">
                                     </div> -->
-
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" formControlName="UserName" required placeholder="Name"
+                                        [ngClass]="{ 'is-invalid': submitted && f['UserName'].errors }">
+                                        <div *ngIf="submitted && f['UserName'].errors" class="invalid-feedback">
+                                            <div *ngIf="f['UserName'].errors['required']">UserName is required</div>
+                                        </div>
+                                    </div>
+                                   
                                     <div class="form-group">
                                         <label>From</label>
                                         <input type="text" class="form-control" formControlName="from" required placeholder="Email Id"
                                         [ngClass]="{ 'is-invalid': submitted && f['from'].errors }">
+                                        <div *ngIf="submitted && f['from'].errors" class="invalid-feedback">
+                                            <div *ngIf="f['from'].errors['required']">From is required</div>
+                                        </div>
                                     </div>
 
-                                    <!-- <div class="form-group">
-                                        <textarea name="Subject" rows="4" class="form-control " formControlName="Subject" required placeholder="Subject"></textarea>
-                                    </div> -->
+                                    <div class="form-group">
+                                        <label>Phone Number</label>
+                                        <input type="text" class="form-control" formControlName="ContactNumber" required placeholder="Phone Number"
+                                        [ngClass]="{ 'is-invalid': submitted && f['ContactNumber'].errors }">
+                                        <div *ngIf="submitted && f['ContactNumber'].errors" class="invalid-feedback">
+                                            <div *ngIf="f['ContactNumber'].errors['required']">PhoneNumber is required</div>
+                                        </div>
+                                    </div>
 
                                     <div class="form-group">
                                         <Label>Service</Label>
                                         <select type="text" class="form-control" formControlName="Service" placeholder="Subject Select a service"
                                         [ngClass]="{ 'is-invalid': submitted && f['Service'].errors }">
+                                        <div *ngIf="submitted && f['Service'].errors" class="invalid-feedback">
+                                            <div *ngIf="f['Service'].errors['required']">Service is required</div>
+                                        </div>
                                             <option value="0" selected>Select a Service</option>
                                             <option *ngFor="let object of servicelist" [value]="object.title">
                                                 {{object.title}}

@@ -1,4 +1,7 @@
-﻿namespace DigitalMarketing.Models
+﻿using System.Net.Mail;
+using System.Reflection;
+
+namespace DigitalMarketing.Models
 {
     public class EmailModel
     {
@@ -6,16 +9,20 @@
         public string To { get; set; }
         public string Message { get; set; }
         public string Service { get; set; }
-        //public EmailService Service { get; set; }
-    }
+        public string UserName { get; set; }
+        public string ContactNumber { get; set; }
 
-    public class EmailService
-    {
+        public string Result { get; set; }
 
-        public string SmtpServer { get; set; }
-        public int SmtpPort { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-     
+        public MailMessage CreateMailMessage()
+        {
+            MailMessage message = new MailMessage();
+            message.From = new MailAddress(From);
+            message.To.Add(To);
+            message.Subject = Service;
+            message.Body = $"User Name:{UserName}\n Contact Number: {ContactNumber}\n Message:{Message}";
+            message.IsBodyHtml = false;
+            return message;
+        }
     }
 }
