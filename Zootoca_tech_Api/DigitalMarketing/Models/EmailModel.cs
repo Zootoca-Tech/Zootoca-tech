@@ -20,8 +20,8 @@ namespace DigitalMarketing.Models
             message.From = new MailAddress(From);
             message.To.Add(To);
             message.Subject = Service;
-            message.Body = $"User Name:{UserName}\n Contact Number: {ContactNumber}\n Message:{Message}";
-            message.IsBodyHtml = false;
+            message.Body = $"<b>User Name:</b> {UserName} <br /> <b>Contact Number:</b>{ContactNumber}<br /> <b>Message:</b> {Message}";
+            message.IsBodyHtml = true;
             return message;
         }
     }
