@@ -15,7 +15,7 @@
         <div class="section-full p-tb80 inner-page-padding">
             <div class="container">
                 <!-- Filter Nav START -->
-              <div class="filter-wrap p-b30 text-center">
+              <!-- <div class="filter-wrap p-b30 text-center">
                     <ul class="filter-navigation masonry-filter clearfix">
                         <li class="active"><a class="btn from-top" data-filter="*" data-hover="All">All</a></li>
                         <li><a class=" btn from-top" data-filter=".cat-1">Web Design</a></li>
@@ -27,31 +27,36 @@
                         <li><a class=" btn from-top" data-filter=".cat-7">Graphic Design</a></li>
                         <li><a class=" btn from-top" data-filter=".cat-8">Video Editing</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <!-- Filter Nav END -->
                 
                 <!-- GALLERY CONTENT START -->
-                 <ul  class="masonry-outer mfp-gallery work-grid row clearfix list-unstyled">
+                 <!-- <ul  class="masonry-outer mfp-gallery work-grid row clearfix list-unstyled">
                  
-                    <!-- COLUMNS 1 -->
                     <li *ngFor="let object of projects" class="masonry-item {{object.category}} col-lg-3 col-md-6 col-sm-12 m-b30">
                         <app-elements-box5 [data]='object'></app-elements-box5>
                     </li>
                                                        
-                 </ul>
+                 </ul> -->
+                 
                 <!-- GALLERY CONTENT END -->
                 
-                <div class="text-center load-more-btn-outer" style="background-image:url(assets/images/background/cross-line.png)">
+                <!-- <div class="text-center load-more-btn-outer" style="background-image:url(assets/images/background/cross-line.png)">
                     <button class="site-button-secondry btn-half"><span>Load More</span></button>
-                </div>
+                </div> -->
             </div>
     </div>
         
         </div>
     <!-- CONTENT END -->
+
+            <!-- WHAT WE DO START -->
+            <app-what-we-do [data]='whatwedo'></app-what-we-do>
     
     <!-- FOOTER START -->
     <app-footer1 [data]='footerData'></app-footer1>
     <!-- FOOTER END -->
 
 </div>
+
+

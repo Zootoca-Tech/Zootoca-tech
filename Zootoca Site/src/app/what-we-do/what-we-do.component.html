@@ -1,0 +1,31 @@
+<div class="section-full  mobile-page-padding bg-white  p-t80 p-b30 bg-repeat overflow-hide" style="background-image:url(assets/images/background/bg-5.png);">
+            
+    <div class="container right-half-bg-image-outer">
+    <div *ngIf='sectional!=0' class="right-half-bg-image bg-parallax bg-fixed bg-top-right"  data-stellar-background-ratio="0" ></div>
+        <!-- TITLE START -->
+        <div class="section-head">
+            <div class="sx-separator-outer separator-left">
+                <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <h3 class="sep-line-one">{{data.title}}</h3>
+                </div>
+            </div>
+        </div>                   
+        <!-- TITLE END -->                 
+        <div class="section-content">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 m-b30" *ngFor="let object of data.work">
+                
+                    <div class="number-block-one animate-in-to-top">
+                        <img src="{{object.image}}" alt="" />
+                        <div class="figcaption bg-white text-center p-a20">
+                            <h4 class="m-a0">{{object.title}}</h4>
+                        </div>
+                        <div class="figcaption-number text-center sx-text-primary animate-in-to-top-content">
+                            <span>{{object.serial}}</span>
+                        </div>                                    
+                    </div>                                         
+                </div>
+            </div>
+        </div>
+    </div>
+ </div> 

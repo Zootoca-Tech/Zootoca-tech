@@ -14,6 +14,42 @@ export class PageProjectGrid3ColsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  whatwedo = {
+    title: "Our Works",
+    work: [
+      {
+        image: "assets/images/l2.jpg",
+        title: "SSC MAX ACADEMY",
+        serial: "01"
+      },
+      {
+        image: "assets/images/l1.jpg",
+        title: "BESANT NAGAR ANNAI",
+        serial: "02"
+      },
+      {
+        image: "assets/images/l3.jpg",
+        title: "HACKATHON",
+        serial: "03"
+      },
+      {
+        image: "assets/images/l6.jpg",
+        title: "FIRE AND SAFETY PROMOTION VIDEOS",
+        serial: "04"
+      },
+      {
+        image: "assets/images/l6.jpg",
+        title: "GOLD BELL FOUNDATION FOOD EYE",
+        serial: "05"
+      },
+      {
+        image: "assets/images/l6.jpg",
+        title: "OPEN MIC SHOWS",
+        serial: "06"
+      }
+    ],
+  }
+
   banner = {
     image: "assets/images/banner/3.jpg",
     title: "Grid 3 Columns",

@@ -118,6 +118,7 @@ import { SectionShopHeaderComponent } from './sections/shop/section-shop-header/
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from './sections/home/home1/section-testimonials1/testimonials/testimonials.component';
+import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 
 @NgModule({
   declarations: [
@@ -233,7 +234,8 @@ import { TestimonialsComponent } from './sections/home/home1/section-testimonial
     ElementsBox11Component,
     SafePipe,
     SectionShopHeaderComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    WhatWeDoComponent
   ],
   imports: [
     BrowserModule,
