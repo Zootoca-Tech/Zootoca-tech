@@ -88,7 +88,9 @@
                 "inject": false
               }
             ],
+
             "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "src/assets/cursorfunction/cursor.js",
               "src/assets/js/jquery-1.12.4.min.js",
               "src/assets/js/popper.min.js",
@@ -116,6 +118,7 @@
               "src/assets/js/rev-script.js"
             ]
           },
+          
           "configurations": {
             "production": {
               "budgets": [
@@ -186,5 +189,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b1e7825e-ac38-408c-9d32-abf0b1b8c36e"
   }
 }

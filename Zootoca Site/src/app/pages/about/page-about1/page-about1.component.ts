@@ -14,7 +14,7 @@ export class PageAbout1Component implements OnInit {
 
   banner = {
      //image: "assets/images/banner/5.jpg",
-     image: './assets/new_images/About_banner.jpg',
+     image: 'https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/BannerImages/About+Us.jpg',
     title: "About Company",
     description: "The essence of interior design will always be about people and how they live. It is about the realities of what makes for an attractive, civilized.",
     page: "About 1"
