@@ -32,7 +32,7 @@ namespace DigitalMarketing.Controllers
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
             smtpClient.Port = 587;
             smtpClient.EnableSsl = true;
-            smtpClient.Credentials = new NetworkCredential("akashks6341@gmail.com", "jdqt afoj cihq remp");
+            smtpClient.Credentials = new NetworkCredential("zootocatechnologies@gmail.com", "wbdi kamn mflg urjl");
             //smtpClient.Credentials = new NetworkCredential("user@gmail.com", "Secret pwd");
 
             // Send the email

@@ -19,8 +19,8 @@ namespace DigitalMarketing.Models
             MailMessage message = new MailMessage();
             message.From = new MailAddress(From);
             message.To.Add(To);
-            message.Subject = Service;
-            message.Body = $"<b>User Name:</b> {UserName} <br /> <b>Contact Number:</b>{ContactNumber}<br /> <b>Message:</b> {Message}";
+            message.Subject = $"Enquiry about:{ Service}";
+            message.Body = $"<b>User Name:</b> {UserName} <br /><b>EmailId: {From}</b><br/><b>Service: {Service}</b><br/>  <b>Contact Number:</b>{ContactNumber}<br /> <b>Message:</b> {Message}";
             message.IsBodyHtml = true;
             return message;
         }

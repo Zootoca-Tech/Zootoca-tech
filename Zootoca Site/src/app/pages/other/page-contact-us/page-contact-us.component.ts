@@ -25,7 +25,7 @@ export class PageContactUsComponent implements OnInit {
       {
         UserName:['',[Validators.required]],
         from: ['',[Validators.required]],
-        to:['akashks3733@gmail.com'],//Add to email address(hardcore)
+        to:['zootocatechnologies@gmail.com'],//Add to email address(hardcore)
         Message:[''],
         ContactNumber:['',[Validators.required]],
         // Address:[''],
