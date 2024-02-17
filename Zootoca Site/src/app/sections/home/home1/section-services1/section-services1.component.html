@@ -1,51 +1,44 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<div class="section-full mobile-page-padding p-t80  p-b50 bg-gray">
+<div class="section-full mobile-page-padding p-t80  p-b50 bg-gray" style="background-image: url(assets/images/background/cross-line2.png);">
     <div class="section-content">
         <div class="container">
             <!-- TITLE START -->
             <div class="section-head">
                 <div class="sx-separator-outer separator-left">
-                    <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets\new_images\bg_image.jpg)">
                         <h3 class="sep-line-one ">{{data.title}}</h3>
                     </div>
                 </div>
             </div>                   
             <!-- TITLE END -->
               <div class="row">
-   
                 <!-- Block one -->
                 <div class="col-lg-3 col-md-6 col-sm-12 m-b30"  *ngFor="let object of data.services">
-                    <div class="sx-icon-box-wraper  icon-count-2-outer">
-                        <div class="icon-count-2">
-                            <span class="icon-count-number">{{object.serial}}</span><br>
-                            <div class="sx-box   image-hover-block">
-                                    <img src="{{object.icon}}" alt="" (click)="showImage(object.icon)"
+                            <!-- <span class="icon-count-number">{{object.serial}}</span><br> -->
+                            <figure class="snip1581 roll" >
+                                    <img class="cardimg" src="{{object.icon}}" alt="" (click)="showImage(object.icon)"
                                     data-bs-toggle="modal" data-bs-target="#imgePresnt"><br>
-                            </div>
-                        </div>
-                    </div>                            	
-                </div>                                                                                                                                
+                            </figure>   	
+                </div>   
+                <div class="">
+                    <h1 data-heading="I">{{data.title2}}</h1>
+                </div>                                                                                                                               
             </div>
         </div>
-    </div>
-    
-    <div class="">
-        <h1 data-heading="I">{{data.title2}}</h1>
-    </div>                
+    </div>            
 </div> 
-
-<div class="container">
-    <!-- Modal -->
-    <div class="modal fade" id="imgePresnt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <img [src]="displayImage" class="modal-image">
-            <!-- <div class="modal-content">
-                <div class="modal-body d-flex justify-content-center align-items-center"> 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img [src]="displayImage" class="ratio ratio-16x9" height="500" width="300">
-                </div>
-            </div> -->
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="imgePresnt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Adjust modal size as needed -->
+        <div class="">
+            <div class="text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img [src]="displayImage" alt="">
+            </div>
         </div>
     </div>
 </div>
