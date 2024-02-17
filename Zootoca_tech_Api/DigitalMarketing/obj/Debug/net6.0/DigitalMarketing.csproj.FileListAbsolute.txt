@@ -94,3 +94,35 @@ D:\FREELANCING PROJECTS\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug
 D:\FREELANCING PROJECTS\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.pdb
 D:\FREELANCING PROJECTS\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.genruntimeconfig.cache
 D:\FREELANCING PROJECTS\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\ref\DigitalMarketing.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\appsettings.Development.json
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\appsettings.json
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\DigitalMarketing.exe
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\DigitalMarketing.deps.json
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\DigitalMarketing.runtimeconfig.json
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\DigitalMarketing.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\DigitalMarketing.pdb
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.csproj.AssemblyReference.cache
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.GeneratedMSBuildEditorConfig.editorconfig
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.AssemblyInfoInputs.cache
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.AssemblyInfo.cs
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.csproj.CoreCompileInputs.cache
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.MvcApplicationPartsAssemblyInfo.cs
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.MvcApplicationPartsAssemblyInfo.cache
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\staticwebassets\msbuild.DigitalMarketing.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\staticwebassets\msbuild.build.DigitalMarketing.props
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DigitalMarketing.props
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.DigitalMarketing.props
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\staticwebassets.pack.json
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\staticwebassets.build.json
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\staticwebassets.development.json
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\scopedcss\bundle\DigitalMarketing.styles.css
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.csproj.CopyComplete
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\refint\DigitalMarketing.dll
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.pdb
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\DigitalMarketing.genruntimeconfig.cache
+F:\Glareal\Zootoo\Zootoca-tech\Zootoca_tech_Api\DigitalMarketing\obj\Debug\net6.0\ref\DigitalMarketing.dll

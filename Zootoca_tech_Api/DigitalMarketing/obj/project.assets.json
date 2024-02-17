@@ -437,23 +437,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Akash\\.nuget\\packages\\": {},
+    "C:\\Users\\home\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FREELANCING PROJECTS\\Zootoca-tech\\Zootoca_tech_Api\\DigitalMarketing\\DigitalMarketing.csproj",
+      "projectUniqueName": "F:\\Glareal\\Zootoo\\Zootoca-tech\\Zootoca_tech_Api\\DigitalMarketing\\DigitalMarketing.csproj",
       "projectName": "DigitalMarketing",
-      "projectPath": "D:\\FREELANCING PROJECTS\\Zootoca-tech\\Zootoca_tech_Api\\DigitalMarketing\\DigitalMarketing.csproj",
-      "packagesPath": "C:\\Users\\Akash\\.nuget\\packages\\",
-      "outputPath": "D:\\FREELANCING PROJECTS\\Zootoca-tech\\Zootoca_tech_Api\\DigitalMarketing\\obj\\",
+      "projectPath": "F:\\Glareal\\Zootoo\\Zootoca-tech\\Zootoca_tech_Api\\DigitalMarketing\\DigitalMarketing.csproj",
+      "packagesPath": "C:\\Users\\home\\.nuget\\packages\\",
+      "outputPath": "F:\\Glareal\\Zootoo\\Zootoca-tech\\Zootoca_tech_Api\\DigitalMarketing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Akash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\home\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -462,7 +462,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -505,7 +505,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
