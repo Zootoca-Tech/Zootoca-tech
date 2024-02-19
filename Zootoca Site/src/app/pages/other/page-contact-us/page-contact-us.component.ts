@@ -2,23 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EmailService } from 'src/web-api-services/email-service.service';
+import { NotifyService } from 'src/web-api-services/notify.service';
 //import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
 @Component({
   selector: 'app-page-contact-us',
   templateUrl: './page-contact-us.component.html',
   styleUrls: ['./page-contact-us.component.css']
 })
-export class PageContactUsComponent implements OnInit {
+export class PageContactUsComponent {
   contactusform: FormGroup;
   con: any;
   submitted: boolean = false;
   isLoading: boolean = false;
+  error: any;
 
   constructor(private _fb: FormBuilder,
     private router: Router,
-   // private modalService: NgbModal,
-    //private Toastr: NotificationService,
+
+    private Toastr: NotifyService,
     private _emailservice: EmailService) { 
 
     this.contactusform = this._fb.group(
@@ -45,12 +46,22 @@ export class PageContactUsComponent implements OnInit {
     return this.contactusform.controls;
   }
 
-  OnSubmit(){
-    this._emailservice.sendemail(this.contactusform.value).subscribe(data=>{
-      console.log("trigged0",this.contactusform.value);
-      console.log("emailsend",data);
-      this.isLoading = false;
-    })
+  OnSubmit() {
+    this.submitted = true;
+    if (this.contactusform.invalid) {
+      return;
+    }
+    this._emailservice.sendemail(this.contactusform.value).subscribe(data => {
+      console.log(data)
+      this.contactusform.reset();
+    }, error => {
+      if (error.status === 200)
+        this.Toastr.showSuccess(error.error.text, "Success");
+      if (error.status === 500)
+        this.Toastr.showError(error.error.text, "Error");
+    }
+    )
+    this.contactusform.reset();
   }
 
   //this is service list binded with html//

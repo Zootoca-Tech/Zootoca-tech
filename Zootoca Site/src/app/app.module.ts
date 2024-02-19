@@ -116,9 +116,11 @@ import { ElementsBox11Component } from './elements/boxes/elements-box11/elements
 import { SafePipe } from './pipes/safe.pipe';
 import { SectionShopHeaderComponent } from './sections/shop/section-shop-header/section-shop-header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { TestimonialsComponent } from './sections/home/home1/section-testimonials1/testimonials/testimonials.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
+import { ToastrModule } from 'ngx-toastr';  //added for popup notification status
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -244,8 +246,14 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
