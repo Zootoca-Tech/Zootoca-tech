@@ -128,39 +128,75 @@ export class Home1Component implements OnInit {
     services: [
       {
         serial: "01",
-        icon: "flaticon-sketch",
-        title: "Plans and Projects",
-        description: "We provide a range of architectural 3D modeling services to our customers to aid the design, planning and..."
+        icon: "assets/images/wd.png",
+        title: "Web Design",
+        description: "We create user-friendly websites that foster lasting connections, enabling you to cultivate and nurture long-term relationships with your customers."
       },
       {
         serial: "02",
-        icon: "flaticon-stairs",
-        title: "Interior",
-        description: "Analysis and planning services that help both the client and architects to work out the forthcoming project..."
+        icon: "assets/images/seo.png",
+        title: "SEO",
+        description: "We excel in driving organic leads and traffic to your website through powerful SEO strategies, fostering natural online growth."
       },
       {
         serial: "03",
-        icon: "flaticon-window",
-        title: "Exterior",
-        description: "We offer comprehensive Architectural Engineering Services including Interior design, Master planning, 3D modeling..."
+        icon: "assets/images/pe.png",
+        title: "Photo Editing",
+        description: "We effortlessly elevate ordinary photos into captivating masterpieces, meticulously enhancing the essence and beauty of each moment."
       },
       {
         serial: "04",
-        icon: "flaticon-skyline",
-        title: "Architecture",
-        description: "Project management is the process by which our team plans and executes your project. We will develop it..."
+        icon: "assets/images/em.png",
+        title: "Event Management",
+        description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable."
       },
       {
         serial: "05",
-        icon: "flaticon-bed",
-        title: "Furniture",
-        description: "Our team also provides consultations on all architectural issues, even if you need specific info about working..."
+        icon: "assets/images/ve.png",
+        title: "Video Editing",
+        description: "We expertly blend visuals and sound, sculpting a seamless masterpiece that brings the narrative to life with precision and finesse."
       },
       {
         serial: "06",
-        icon: "flaticon-door",
-        title: "Decoration",
-        description: "We combine Interior and Exterior Design services and often provide them as a single solution. It helps us..."
+        icon: "assets/images/gd.png",
+        title: "Graphic Design",
+        description: "We seamlessly blend creativity with precision, transforming ideas into visually captivating masterpieces through the artistry of graphic design."
+      },
+      {
+        serial: "07",
+        icon: "assets/images/ms.png",
+        title: "Marketing Strategy",
+        description: "We strategically connect with our audience, blending data-driven insights and compelling narratives to elevate our brand impact."
+      },  
+      {
+        serial: "08",
+        icon: "assets/images/cw.png",
+        title: "Content Writing",
+        description: "We, as content creators, blend creativity and precision to elevate brands and engage audiences effectively."
+      },
+      {
+        serial: "09",
+        icon: "assets/images/im.png",
+        title: "Influencer Marketing",
+        description: "We amplify brand stories through strategic influencer partnerships, creating authentic connections that captivate audiences worldwide."
+      },
+      {
+        serial: "10",
+        icon: "assets/images/ma.png",
+        title: "Mobile App",
+        description: "We elevate experiences through cutting-edge mobile apps, bridging innovation and convenience seamlessly."
+      },
+      {
+        serial: "11",
+        icon: "assets/images/sma.png",
+        title: "Social media Ads",
+        description: "We captivate audiences with precision-targeted social media ads, creating visually stunning content that elevates your brand."
+      },
+      {
+        serial: "12",
+        icon: "assets/images/ga.png",
+        title: "Google Ads",
+        description: "We elevate businesses to new heights through the power of Google Ads, utilizing advanced technology and data-driven strategies."
       }
     ]
   }

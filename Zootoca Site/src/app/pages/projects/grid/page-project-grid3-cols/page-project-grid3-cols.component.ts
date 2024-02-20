@@ -52,9 +52,9 @@ export class PageProjectGrid3ColsComponent implements OnInit {
 
   banner = {
     image: "assets/images/banner/3.jpg",
-    title: "Grid 3 Columns",
-    description: "The essence of interior design will always be about people and how they live. It is about the realities of what makes for an attractive, civilized.",
-    page: " Project With Grid 3 Columns"
+    title: "Our Works",
+    description: "With creativity as our compass and determination as our fuel, we transform ideas into impactful works that resonate with brilliance and redefine industry standards.",
+    page: "Works"
   }
 
   footerData = {

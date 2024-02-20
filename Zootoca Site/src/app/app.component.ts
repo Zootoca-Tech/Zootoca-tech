@@ -1,7 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { ViewportScroller } from '@angular/common';
 
 
 declare var jQuery: any;
@@ -16,14 +15,9 @@ declare var initializeOnLoad: any;
 export class AppComponent implements AfterViewInit {
   title = 'Zootoca Technologies';
 
-  constructor(private router: Router,private viewportScroller: ViewportScroller) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.viewportScroller.scrollToPosition([0, 0]);
-      }
-    });
   }
   
   ngAfterViewInit(): void {
