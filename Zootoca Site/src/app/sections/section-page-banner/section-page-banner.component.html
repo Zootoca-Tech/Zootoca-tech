@@ -4,9 +4,14 @@
         <div class="sx-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="m-tb0">{{data?.title || title}}</h2> 
-                    <!-- <h2 class="m-tb0">{{title}}</h2>                                -->
-                    <p>
+                    <!-- <div class="main">
+                        <h1 class="main-heading">
+                          <span class="main-heading-primary">{{data?.title || title}}</span>
+                          <span class="main-heading-secondary">{{data?.description || description}}</span>
+                        </h1>
+                    </div> -->
+                    <h2 class="m-tb0 main-heading-primary">{{data?.title || title}}</h2> 
+                    <p  class="main-heading-secondary">
                         {{data?.description || description}}
                     </p>
                 </div>
@@ -24,3 +29,10 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+

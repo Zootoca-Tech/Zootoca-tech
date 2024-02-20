@@ -11,7 +11,7 @@
                     <div class="col-xl-7 col-lg-7 col-md-12">
                         <div class="about-home-2">
                             <h3 class="m-t0 sx-tilte">{{data.title}}</h3>
-                            <p>{{data.description}}</p>
+                            <p class="description" [innerHTML]="data.description" ></p>
                             <div class="text-left">
                                 <a routerLink="/about/about2" class="site-button-link">Read More</a>
                             </div>                                                    
