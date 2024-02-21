@@ -122,7 +122,7 @@ export class Home1Component implements OnInit {
     }
   }
 
-  services = {
+  homeservice = {
     title: "All Services",
     title2: "Services",
     services: [
