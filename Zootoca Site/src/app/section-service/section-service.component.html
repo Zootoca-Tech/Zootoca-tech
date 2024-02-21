@@ -30,7 +30,8 @@
                     
                 </div>
                 <div class="text-center">
-                <a class="site-button-link fw-bold" *ngIf="itemsToShow < data.services.length" (click)="loadMore()">Load More</a> 
+                <a style="margin-right: 30px;" class="site-button-link fw-bold" *ngIf="itemsToShow < data.services.length" (click)="loadMore()">Load More</a> 
+                <a class="site-button-link fw-bold" *ngIf="itemsToShow > 6" (click)="showLess()">Show Less</a>
             </div>                                                                                                                                      
             </div>
         </div>

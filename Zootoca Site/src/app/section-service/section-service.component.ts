@@ -18,5 +18,8 @@ export class SectionServiceComponent implements OnInit {
   loadMore() {
     this.itemsToShow += 3;
   }
-
+  
+  showLess() {
+    this.itemsToShow = 6;
+  }
 }
