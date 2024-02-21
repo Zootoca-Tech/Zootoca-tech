@@ -53,8 +53,8 @@ body {
 
 .content-section.dark {
     background-color: #000000e7;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
     overflow: hidden;
 }
 /* @media screen and (max-width: 991px) */
@@ -63,8 +63,8 @@ body {
 }
 .content-section {
     text-align: center;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    /* padding-top: 110px;
+    padding-bottom: 110px; */
     display: block;
     position: relative;
     overflow: hidden;
@@ -84,7 +84,7 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px 20px;
+    padding: 30px 20px;
     display: flex;
     position: relative;
 }
@@ -156,12 +156,12 @@ element.style {
 }
 .image-5 {
     width: auto;
-    height: 300px;
+    height: 250px;
     /* max-width: 300%; */
 }
 .double-color-icons-box {
     width: 50%;
-    padding-bottom: 29px;
+    padding-bottom: 20px;
 }
 .image-6 {
     width: auto;
@@ -169,7 +169,7 @@ element.style {
 }
 .image-7 {
     width: auto;
-    height: 300px;
+    height: 250px;
     display: inline-block;
 }
 img {
@@ -184,7 +184,7 @@ img {
     overflow: clip;
 }
 .chat-icon {
-    padding-bottom: 29px;
+    padding-bottom: 19px;
 }
 .right-column.how-i-work {
     text-align: left;
@@ -209,10 +209,7 @@ p {
     font-size: 22px;
     font-weight: 300;
     line-height: 32px;
-}
-p {
     margin-top: 0;
-    /* margin-bottom: 10px; */
 }
 
 p {
@@ -224,6 +221,6 @@ p {
 }
 .how-i-work-row-2, .how-i-work-row-3 {
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
 }
