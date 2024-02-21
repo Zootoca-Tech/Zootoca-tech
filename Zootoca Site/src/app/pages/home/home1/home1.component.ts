@@ -64,63 +64,93 @@ export class Home1Component implements OnInit {
   }
 
   testimonials = {
-    experience: {
-      title: "Infographic",
-      items: [
-        {
-          count: "24",
-          title: "Years of Experience"
-        },
-        {
-          count: "340",
-          title: "Project Taken"
-        },
-        {
-          count: "86",
-          title: "Awards Won"
-        },
-        {
-          count: "36",
-          title: "Twitter Followers"
-        }
-      ]
-    },
-    testimonials: {
-      title: "Testimonial",
-      content: [
-        {
-          image: "assets/images/testimonials/pic1.jpg",
-          name: "Rosalina D. William",
-          role: "Architect",
-          quote: "“Amazing fast and reliable customer support! The team of developers are willing to go mile for customer service! Thanks! which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
-        },
-        {
-          image: "assets/images/testimonials/pic2.jpg",
-          name: "Mitchal Jhon",
-          role: "Architect",
-          quote: "“Amazing fast and reliable customer support! The team of developers are willing to go mile for customer service! Thanks! which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
-        },
-        {
-          image: "assets/images/testimonials/pic3.jpg",
-          name: "Barney Smith",
-          role: "Interior designer",
-          quote: "“Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support. which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
-        },
-        {
-          image: "assets/images/testimonials/pic4.jpg",
-          name: "Rosalina D. William",
-          role: "Architect",
-          quote: "“Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support. which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
-        },
-        {
-          image: "assets/images/testimonials/pic3.jpg",
-          name: "Rosalina D. William",
-          role: "CEO, Intearch",
-          quote: "“Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support. which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
-        }
-      ]
-    }
+    title: "Testimonial",
+    testimonials: [
+      {
+        image: "assets/images/testimonials/pic1.jpg",
+        role: "Architect",
+        name: "Rosalina D. William",
+        quotes: "Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support."
+      },
+      {
+        image: "assets/images/testimonials/pic2.jpg",
+        role: "Architect",
+        name: "Mitchal Jhon",
+        quotes: "Amazing fast and reliable customer support! The team of willing to go mile for customer service! Thanks!"
+      },
+      {
+        image: "assets/images/testimonials/pic3.jpg",
+        role: "Interior designer",
+        name: "Barney Smith",
+        quotes: "Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support."
+      },
+      {
+        image: "assets/images/testimonials/pic4.jpg",
+        role: "Architect",
+        name: "Rosalina D. William",
+        quotes: "Amazing fast and reliable customer support! The team of willing to go mile for customer service! Thanks!"
+      }
+    ]
   }
+
+  // testimonials = {
+  //   experience: {
+  //     title: "Infographic",
+  //     items: [
+  //       {
+  //         count: "24",
+  //         title: "Years of Experience"
+  //       },
+  //       {
+  //         count: "340",
+  //         title: "Project Taken"
+  //       },
+  //       {
+  //         count: "86",
+  //         title: "Awards Won"
+  //       },
+  //       {
+  //         count: "36",
+  //         title: "Twitter Followers"
+  //       }
+  //     ]
+  //   },
+  //   testimonials: {
+  //     title: "Testimonial",
+  //     content: [
+  //       {
+  //         image: "assets/images/testimonials/pic1.jpg",
+  //         name: "Rosalina D. William",
+  //         role: "Architect",
+  //         quote: "“Amazing fast and reliable customer support! The team of developers are willing to go mile for customer service! Thanks! which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
+  //       },
+  //       {
+  //         image: "assets/images/testimonials/pic2.jpg",
+  //         name: "Mitchal Jhon",
+  //         role: "Architect",
+  //         quote: "“Amazing fast and reliable customer support! The team of developers are willing to go mile for customer service! Thanks! which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
+  //       },
+  //       {
+  //         image: "assets/images/testimonials/pic3.jpg",
+  //         name: "Barney Smith",
+  //         role: "Interior designer",
+  //         quote: "“Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support. which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
+  //       },
+  //       {
+  //         image: "assets/images/testimonials/pic4.jpg",
+  //         name: "Rosalina D. William",
+  //         role: "Architect",
+  //         quote: "“Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support. which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
+  //       },
+  //       {
+  //         image: "assets/images/testimonials/pic3.jpg",
+  //         name: "Rosalina D. William",
+  //         role: "CEO, Intearch",
+  //         quote: "“Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support. which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of me.”"
+  //       }
+  //     ]
+  //   }
+  // }
 
   homeservice = {
     title: "All Services",
