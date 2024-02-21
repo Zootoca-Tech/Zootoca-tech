@@ -32,7 +32,7 @@ export class SectionServices1Component implements OnInit {
     if (!event) {
       this.displayImage = "assets/default.png";
     }
-    // console.log("event:", event, this.treatmentImage);
+    console.log("Imageeeeeeeeeee:", event);
     this.displayImage = event;
   }
 

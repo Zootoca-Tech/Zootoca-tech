@@ -34,15 +34,15 @@ export class Services2Component implements OnInit {
         icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/seo.jpg",
         title: "SEO",
         description: "We provide a range of architectural 3D modeling services to our customers to aid the Web Digital Media Group is a leading Android UI/UX App development company that delivers end-to-end Android App development services to open up new opportunities for business. Being a top company, we specialize to transform your unique ideas into real-time Android applications. We will help you unlock wonderful experience on different types of devices – foldable devices, tablets, smartphones, auto/cars, wearables/smartwatch, and television. No matter, whatever size and shape of your device is, you can have more engaging and fast experience. We, as the most trusted Android App development company, use latest tools to enable innovation. Our company is committed to unlocking the power of Android such as Android developer tools, security protocols, libraries, Android architecture components, and Android framework.",
-        image: "assets/images/service-images/seo.jpg"
+        imageIn: "assets/images/service-images/seo.jpg"
       },
       {
 
         serial: "02",
         icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/webDevelopment.jpg",
         title: "Web Designing",
-        description: "Analysis and planning services that help both the client and architects to work out the forthcoming project..."
-        
+        description: "Analysis and planning services that help both the client and architects to work out the forthcoming project...",
+        imageIn: "assets/images/service-images/WebdesIn.jpg"
       },
       {
         serial: "03",
