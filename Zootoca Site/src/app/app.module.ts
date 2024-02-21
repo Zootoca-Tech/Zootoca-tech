@@ -122,6 +122,8 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ToastrModule } from 'ngx-toastr';  //added for popup notification status
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SectionServiceComponent } from './section-service/section-service.component';
+import { SectionProcessComponent } from './section-process/section-process.component';
+
 
 @NgModule({
   declarations: [
@@ -239,7 +241,8 @@ import { SectionServiceComponent } from './section-service/section-service.compo
     SectionShopHeaderComponent,
     TestimonialsComponent,
     WhatWeDoComponent,
-    SectionServiceComponent
+    SectionServiceComponent,
+    SectionProcessComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+.vertical-divider {
+    width: 3px;
+    height: 109px;
+    background-color: #909090;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.right-column.how-i-work {
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 0;
+    position: relative;
+    text-align: left;
+}
+
+
+body {
+    min-height: 100%;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* title */
+.mini-title {
+    color: #333;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    transition: color .2s;
+    position: relative;
+}
+.white {
+    color: #fff;
+}
+
+/* bg */
+
+.content-section.dark {
+    background-color: #000000e7;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+/* @media screen and (max-width: 991px) */
+.content-section {
+    padding-top: 20px;
+}
+.content-section {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+}
+.content-wrapper {
+    width: 80%;
+    max-width: 1040px;
+    flex-direction: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 20px;
+    display: flex;
+    position: relative;
+}
+
+.header-box {
+    width: 90%;
+}
+.header-box {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    display: flex;
+}
+
+.big.white {
+    line-height: 60px;
+}
+.heading-3.big {
+    font-family: acier-bat-solid, sans-serif;
+    font-size: 45px;
+    line-height: 48px;
+}
+.white {
+    color: #fff;
+}
+h3 {
+    color: #333;
+    letter-spacing: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Abril Fatface, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.paragraph.big {
+    text-align: center;
+    font-size: 26px;
+    line-height: 45px;
+
+}
+.paragraph.gray {
+    color: #909090;
+}
+/* .paragraph.big {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: Lato, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 42px;
+} */
+
+/* image */
+
+
+element.style {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.display-icon, .diamond-icon {
+    width: 50%;
+    padding-bottom: 29px;
+}
+.image-5 {
+    width: auto;
+    height: 300px;
+    /* max-width: 300%; */
+}
+.double-color-icons-box {
+    width: 50%;
+    padding-bottom: 29px;
+}
+.image-6 {
+    width: auto;
+    height: 250px;
+}
+.image-7 {
+    width: auto;
+    height: 300px;
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.chat-icon {
+    padding-bottom: 29px;
+}
+.right-column.how-i-work {
+    text-align: left;
+}
+.right-column.how-i-work {
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 0;
+    position: relative;
+}
+
+.paragraph.gray {
+    color: #909090;
+}
+.paragraph {
+    text-align: left;
+}
+p {
+    /* color: #212121; */
+    margin-bottom: 10px;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+}
+p {
+    margin-top: 0;
+    /* margin-bottom: 10px; */
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.how-i-work-row-2, .how-i-work-row-3 {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    display: flex;
+}
