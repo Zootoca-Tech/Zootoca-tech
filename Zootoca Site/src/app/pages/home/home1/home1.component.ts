@@ -249,20 +249,20 @@ export class Home1Component implements OnInit {
     ]
   }
 
-  clients = {
-    title: "Our Clients",
-    title2: "Clients",
-    clients: [
-      "assets/images/client-logo/logo1.png",
-      "assets/images/client-logo/logo2.png",
-      "assets/images/client-logo/logo3.png",
-      "assets/images/client-logo/logo4.png",
-      "assets/images/client-logo/logo5.png",
-      "assets/images/client-logo/logo6.png",
-      "assets/images/client-logo/logo7.png",
-      "assets/images/client-logo/logo8.png"
-    ]
-  }
+  // clients = {
+  //   title: "Our Clients",
+  //   title2: "Clients",
+  //   clients: [
+  //     "assets/images/client-logo/logo1.png",
+  //     "assets/images/client-logo/logo2.png",
+  //     "assets/images/client-logo/logo3.png",
+  //     "assets/images/client-logo/logo4.png",
+  //     "assets/images/client-logo/logo5.png",
+  //     "assets/images/client-logo/logo6.png",
+  //     "assets/images/client-logo/logo7.png",
+  //     "assets/images/client-logo/logo8.png"
+  //   ]
+  // }
 
   team = {
     title: "Super Team",
@@ -289,4 +289,13 @@ export class Home1Component implements OnInit {
       }
     ]
   }
+
+  client = [
+    "assets/images/client-logo/BN Logo.png",
+    "assets/images/client-logo/SSC Logo.png",
+    "assets/images/client-logo/3.png",
+    "assets/images/client-logo/4.png",
+    "assets/images/client-logo/5.png",
+    "assets/images/client-logo/6.png",
+  ]
 }
