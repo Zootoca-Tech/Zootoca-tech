@@ -15,7 +15,7 @@ export class Services2Component implements OnInit {
   banner = {
     image: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/BannerImages/Services.jpg",
     title: "Our Services",
-    description: "Elevate your online presence with our comprehensive marketing services, encompassing SEO, social media management, and targeted advertising. We specialize in driving measurable results to boost your brand visibility and enhance engagement.",
+    description: "Empower your brand with our dynamic services, From captivating photography to innovative marketing strategies, we've got you covered.",
     page: "Services"
   }
 
