@@ -158,9 +158,9 @@ export class Home1Component implements OnInit {
     services: [
       {
         serial: "01",
-        icon: "assets/images/wd.png",
-        title: "Web Design",
-        description: "We create user-friendly websites that foster lasting connections, enabling you to cultivate and nurture long-term relationships with your customers."
+        icon: "assets/images/em.png",
+        title: "Event Management",
+        description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable."
       },
       {
         serial: "02",
@@ -170,15 +170,15 @@ export class Home1Component implements OnInit {
       },
       {
         serial: "03",
-        icon: "assets/images/pe.png",
-        title: "Photo Editing",
-        description: "We effortlessly elevate ordinary photos into captivating masterpieces, meticulously enhancing the essence and beauty of each moment."
+        icon: "assets/images/pg.png",
+        title: "Photography",
+        description: "We effortlessly transform everyday photos into captivating masterpieces, meticulously enhancing the essence and beauty of each captured moment"
       },
       {
         serial: "04",
-        icon: "assets/images/em.png",
-        title: "Event Management",
-        description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable."
+        icon: "assets/images/wd.png",
+        title: "Web Design",
+        description: "We create user-friendly websites that foster lasting connections, enabling you to cultivate and nurture long-term relationships with your customers."
       },
       {
         serial: "05",

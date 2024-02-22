@@ -64,7 +64,7 @@ export class PageContactUsComponent implements OnInit{
   servicelist = [
     {
       id: "01",
-      title: "Events",
+      title: "Event Management",
     },
     {
       id: "02",
@@ -92,7 +92,7 @@ export class PageContactUsComponent implements OnInit{
     },
     {
       id: "07",
-      title: "Event Management",
+      title: "Photography",
     },
     {
       id: "08",
@@ -114,7 +114,7 @@ export class PageContactUsComponent implements OnInit{
   banner = {
     image: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/BannerImages/contact+us.jpg",
     title: "Contact Us",
-    description: "Connect with us through our Contact Us page to explore how our digital marketing expertise can elevate your online presence. We're here to answer your questions and discuss tailored solutions for your business.",
+    description: "Connect with us through our Contact Us page to explore how our expertise in online promotion can elevate your presence. We're here to answer your questions and discuss tailored solutions for your business.",
     page: "Contact Us"
   }
 
