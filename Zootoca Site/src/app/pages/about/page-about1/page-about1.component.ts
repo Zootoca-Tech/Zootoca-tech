@@ -35,8 +35,8 @@ export class PageAbout1Component implements OnInit {
      //image: "assets/images/banner/5.jpg",
     image: 'https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/BannerImages/About+Us.jpg',
     title: "About Company",
-    description: "The essence of interior design will always be about people and how they live. It is about the realities of what makes for an attractive, civilized.",
-    page: "About 1"
+    description: "Zootoca Technologies, we prioritize people and their lifestyles. From SEO to captivating graphics and events, we offer comprehensive services tailored to your needs.",
+    page: "About Us"
   }
 
   footerData = {
@@ -137,22 +137,26 @@ export class PageAbout1Component implements OnInit {
   // }
 
   team = {
-    title: "Our Team Experts",
+    title: "Our Team",
     team: [
       {
-        // image: "assets/images/our-team5/1.jpg",
-        image: "assets/new_images/person1-about.jpg",
+        image: "assets/images/our-team5/1.jpg",
         name: "Johnny Jackman",
         role: "Architect"
       },
       {
-        image: "assets/new_images/person2.jpg",
+        image: "assets/images/our-team5/2.jpg",
         name: "Daniel Rickman",
         role: "Architect"
       },
       {
-        image: "assets/new_images/person3.jpg",
+        image: "assets/images/our-team5/3.jpg",
         name: "Mark Norwich",
+        role: "Architect"
+      },
+      {
+        image: "assets/images/our-team5/4.jpg",
+        name: "Nich Jonas",
         role: "Architect"
       }
     ]
