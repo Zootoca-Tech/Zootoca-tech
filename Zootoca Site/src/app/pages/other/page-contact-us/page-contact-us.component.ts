@@ -58,6 +58,7 @@ export class PageContactUsComponent implements OnInit{
     );
     this.contactusform.reset();
     this.submitted = false;
+    this.contactusform.reset({ selectedService: '0' });
   }
   
   //this is service list binded with html//
