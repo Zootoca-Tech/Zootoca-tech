@@ -36,6 +36,7 @@
 
 .contact-form{
   display: flex;
+  justify-content: center;
 }
 
 .input-fields{
@@ -44,10 +45,10 @@
   /* margin-right: 4%; */
 }
 
-.input-fields,
+/* .input-fields,
 .msg{
-  width: 90%;
-}
+  width: 130%;
+} */
 
 .input-fields .input,
 .msg textarea{
@@ -57,7 +58,8 @@
   border-bottom: 2px solid #c5ecfd;
   padding: 10px;
   color: #c5ecfd;
-  width: 70%;
+  width: 150%;
+  /* width: 90%; */
 }
 
 .msg textarea{
