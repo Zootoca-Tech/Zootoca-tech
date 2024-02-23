@@ -6,7 +6,7 @@ import { PageAbout1Component } from '../../pages/about/page-about1/page-about1.c
 
 const routes: Routes = [
   { path: '', component: PageAbout1Component },
-  { path: 'about', component: PageAbout1Component },
+  { path: 'About-Us', component: PageAbout1Component },
   // { path: 'about2', component: PageAbout2Component }
 ];
 

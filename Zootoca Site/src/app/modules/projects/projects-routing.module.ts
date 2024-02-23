@@ -19,7 +19,7 @@ import { PageProjectDetail2Component } from '../../pages/projects/detail/page-pr
 
 const routes: Routes = [
   { path: '', component: PageProjectCarouselComponent },
-  { path: 'project-grid3-columns', component: PageProjectGrid3ColsComponent },
+  { path: 'Our-Works', component: PageProjectGrid3ColsComponent },
   { path: 'project-grid3-columns-no-gap', component: PageProjectGrid3ColsNogutComponent },
   { path: 'project-grid4-columns', component: PageProjectGrid4ColsComponent },
   { path: 'project-grid4-columns-no-gap', component: PageProjectGrid4ColsNogutComponent },

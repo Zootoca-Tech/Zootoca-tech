@@ -24,27 +24,32 @@ export class PageProjectGrid3ColsComponent implements OnInit {
       },
       {
         image: "assets/images/l1.jpg",
-        title: "BESANT NAGAR ANNAI",
+        title: "ANNAI VELANKANNI SHRINE",
         serial: "02"
       },
       {
         image: "assets/images/l3.jpg",
-        title: "HACKATHON",
+        title: "FOOD EYE",
         serial: "03"
       },
       {
         image: "assets/images/l6.jpg",
-        title: "FIRE AND SAFETY PROMOTION VIDEOS",
+        title: "YINSIDE",
         serial: "04"
       },
       {
         image: "assets/images/l6.jpg",
-        title: "GOLD BELL FOUNDATION FOOD EYE",
+        title: "GOLD BELL FOUNDATION",
         serial: "05"
       },
       {
         image: "assets/images/l6.jpg",
         title: "OPEN MIC SHOWS",
+        serial: "06"
+      },
+      {
+        image: "assets/images/l1.jpg",
+        title: "REFIMAE",
         serial: "06"
       }
     ],

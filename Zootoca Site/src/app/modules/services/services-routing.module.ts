@@ -8,7 +8,7 @@ import { ServiceDetailComponent } from '../../pages/services/service-detail/serv
 const routes: Routes = [
   { path: '', component: Services1Component },
   { path: 'services1', component: Services1Component },
-  { path: 'services', component: Services2Component },
+  { path: 'Our-Services', component: Services2Component },
   { path: 'services-detail', component: ServiceDetailComponent }
 ];
 

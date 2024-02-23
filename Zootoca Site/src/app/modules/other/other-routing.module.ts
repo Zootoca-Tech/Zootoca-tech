@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'icon-font', component: PageFontIconsComponent },
   { path: 'error404', component: PageError404Component },
   { path: 'faq', component: PageFaqComponent },
-  { path: 'contact', component: PageContactUsComponent }
+  { path: 'Contact-Us', component: PageContactUsComponent }
 ];
 
 @NgModule({
