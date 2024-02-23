@@ -36,7 +36,7 @@
                             <!-- Import necessary Angular modules in your component -->
 
 <form class="contact-form bg-gray p-a30" (ngSubmit)="OnSubmit()" [formGroup]="contactusform">
-    <div class="section-head">
+    <div class="section-head justify-content-left">
       <div class="sx-separator-outer separator-left">
         <div class="sx-separator bg-white bg-moving bg-repeat-x"
              style="background-image:url(assets/images/background/cross-line2.png)">
@@ -46,7 +46,7 @@
     </div>
   
     <div class="wrapper">
-      <div class="contact-form">
+      <div class="contact-form justify-content-center">
         <div class="input-fields">
           <input type="text" class="input form-control" placeholder="User Name" formControlName="userName">
           <!-- Display validation message for User Name -->
@@ -81,7 +81,7 @@
             Please select a service
           </div>
           
-        </div>
+        
   
         <div class="msg">
           <textarea placeholder="Message" rows="20" class="form-control" formControlName="message"></textarea>
@@ -94,12 +94,13 @@
             <span>Submit</span>
           </button>
         </div>
+        </div>
       </div>
     </div>
   </form>
   
                         </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="section col-lg-4 col-md-12 col-sm-12">
                             <div class="contact-info block-shadow bg-white bg-center p-a40"
                                 style="background-image:url(assets/images/background/bg-map.png)">
 
