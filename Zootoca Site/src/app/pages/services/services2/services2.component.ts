@@ -99,6 +99,13 @@ export class Services2Component implements OnInit {
         title: "Content Creation",
         description: "Influencer marketing can be highly rewarding — if done right. Sidestep these potential pitfalls to ensure smooth influencer collaborations and successful campaign outcomes",
         imageIn: "assets/images/service-images/seo.jpg"
+      },
+      {
+        serial: "10",
+        icon: "assets/images/service-images/Marketing_Strategy.jpg",
+        title: "Marketing Strategy",
+        description: "Influencer marketing can be highly rewarding — if done right. Sidestep these potential pitfalls to ensure smooth influencer collaborations and successful campaign outcomes",
+        imageIn: "assets/images/service-images/seo.jpg"
       }
     ]
   }
