@@ -8,16 +8,12 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to EC2 on master branch push
+    name: Deploy to EC2 on main branch push
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the files
         uses: actions/checkout@v2
-        with:
-          ref: main
-          # Explicitly set Node.js version to 20 for actions/checkout
-          node-version: '20'
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
@@ -27,12 +23,7 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Executing remote ssh commands using ssh key
+      - name: Setup Apache and deploy
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
@@ -43,5 +34,12 @@ jobs:
             sudo apt-get install -y apache2
             sudo systemctl start apache2
             sudo systemctl enable apache2
-            cd /var/www/html  # Update the directory path as needed
-            sudo mv * .       # Assuming you want to move all files to the root of /var/www/html
+
+            # Ensure Apache is running and accessible
+            sudo systemctl status apache2
+
+            # Move files to the Apache web root
+            sudo mv /var/www/html/* /var/www/html/
+
+            # Restart Apache for changes to take effect
+            sudo systemctl restart apache2
