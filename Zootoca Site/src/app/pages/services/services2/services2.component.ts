@@ -29,56 +29,76 @@ export class Services2Component implements OnInit {
     title2: "Services",
     services: [
       {
-
         serial: "01",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/seo.jpg",
-        title: "SEO",
-        description: "We provide a range of architectural 3D modeling services to our customers to aid the Web Digital Media Group is a leading Android UI/UX App development company that delivers end-to-end Android App development services to open up new opportunities for business. Being a top company, we specialize to transform your unique ideas into real-time Android applications. We will help you unlock wonderful experience on different types of devices – foldable devices, tablets, smartphones, auto/cars, wearables/smartwatch, and television. No matter, whatever size and shape of your device is, you can have more engaging and fast experience. We, as the most trusted Android App development company, use latest tools to enable innovation. Our company is committed to unlocking the power of Android such as Android developer tools, security protocols, libraries, Android architecture components, and Android framework.",
+        icon: "assets/images/service-images/Event.jpg",
+        title: "Event Management",
+        description: "We combine Interior and Exterior Design services and often provide them as a single solution. It helps us...",
         imageIn: "assets/images/service-images/seo.jpg"
       },
       {
-
         serial: "02",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/webDevelopment.jpg",
-        title: "Web Designing",
-        description: "Analysis and planning services that help both the client and architects to work out the forthcoming project...",
-        imageIn: "assets/images/service-images/WebdesIn.jpg"
+        icon: "assets/images/service-images/seo.jpg",
+        title: "SEO",
+        description: "We provide a range of architectural 3D modeling services to our customers to aid the Web Digital Media Group is a leading Android UI/UX App development company that delivers end-to-end Android App development services to open up new opportunities for business. Being a top company, we specialize to transform your unique ideas into real-time Android applications. We will help you unlock wonderful experience on different types of devices – foldable devices, tablets, smartphones, auto/cars, wearables/smartwatch, and television. No matter, whatever size and shape of your device is, you can have more engaging and fast experience. We, as the most trusted Android App development company, use latest tools to enable innovation. Our company is committed to unlocking the power of Android such as Android developer tools, security protocols, libraries, Android architecture components, and Android framework.",
+        imageIn: "assets/images/service-images/seoCvr.jpg"
       },
       {
+
         serial: "03",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/marketing.jpg",
-        title: "Social Media Marketing",
-        description: "We offer comprehensive Architectural Engineering Services including Interior design, Master planning, 3D modeling..."
+        icon: "assets/images/service-images/Website_Development.jpg",
+        title: "Web Design",
+        description: "Analysis and planning services that help both the client and architects to work out the forthcoming project...",
+        imageIn: "assets/images/service-images/Website_Development.jpg"
       },
       {
         serial: "04",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/seo.jpg",
-        title: "Graphic Design",
-        description: "Project management is the process by which our team plans and executes your project. We will develop it..."
+        icon: "assets/images/service-images/SocialMedia_Marketing.jpg",
+        title: "Social Media Marketing",
+        description: "We offer comprehensive Architectural Engineering Services including Interior design, Master planning, 3D modeling...",
+        imageIn: "assets/images/service-images/seo.jpg"
       },
       {
         serial: "05",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/webDevelopment.jpg",
-        title: "Andriod & ios App Development",
-        description: "Our team also provides consultations on all architectural issues, even if you need specific info about working..."
+        icon: "assets/images/service-images/Graphic_Design.jpg",
+        title: "Graphic Design",
+        description: "Project management is the process by which our team plans and executes your project. We will develop it...",
+        imageIn: "assets/images/service-images/seo.jpg"
       },
       {
         serial: "06",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/events.jpg",
-        title: "Event Management",
-        description: "We combine Interior and Exterior Design services and often provide them as a single solution. It helps us..."
+        icon: "assets/images/service-images/Video_Editing.jpg",
+        title: "Video Editing",
+        description: "Our team also provides consultations on all architectural issues, even if you need specific info about working...",
+        imageIn: "assets/images/service-images/seo.jpg"
       },
+
       {
         serial: "07",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/photography.jpg",
+        icon: "assets/images/service-images/Event.jpg",
         title: "Photography & Videography",
-        description: "We combine Interior and Exterior Design services and often provide them as a single solution. It helps us..."
+        description: "We combine Interior and Exterior Design services and often provide them as a single solution. It helps us...",
+        imageIn: "assets/images/service-images/seo.jpg"
       },
       {
         serial: "08",
-        icon: "https://aws-in-eventphotos.s3.ap-south-1.amazonaws.com/dummyImages/marketing.jpg",
-        title: "Influencer Markting",
-        description: "Influencer marketing can be highly rewarding — if done right. Sidestep these potential pitfalls to ensure smooth influencer collaborations and successful campaign outcomes"
+        icon: "assets/images/service-images/Influencer_Marketing.jpg",
+        title: "Influencer Marketing",
+        description: "Influencer marketing can be highly rewarding — if done right. Sidestep these potential pitfalls to ensure smooth influencer collaborations and successful campaign outcomes",
+        imageIn: "assets/images/service-images/seo.jpg"
+      },
+      {
+        serial: "09",
+        icon: "assets/images/service-images/G_ads.jpg",
+        title: "Google Ads",
+        description: "Influencer marketing can be highly rewarding — if done right. Sidestep these potential pitfalls to ensure smooth influencer collaborations and successful campaign outcomes",
+        imageIn: "assets/images/service-images/seo.jpg"
+      },
+      {
+        serial: "10",
+        icon: "assets/images/service-images/Content_Creation.jpg",
+        title: "Content Creation",
+        description: "Influencer marketing can be highly rewarding — if done right. Sidestep these potential pitfalls to ensure smooth influencer collaborations and successful campaign outcomes",
+        imageIn: "assets/images/service-images/seo.jpg"
       }
     ]
   }
