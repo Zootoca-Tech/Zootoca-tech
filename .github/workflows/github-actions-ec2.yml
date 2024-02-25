@@ -26,7 +26,7 @@ jobs:
 
       - name: Set permissions for Demo_kp.pem
         run: |
-          chmod 400 Demo_kp.pem
+          chmod ssh -i "Demo_kp.pem" ubuntu@ec2-34-227-158-102.compute-1.amazonaws.com
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
