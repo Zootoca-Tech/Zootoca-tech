@@ -14,6 +14,19 @@ jobs:
     steps:
       - name: Checkout the files
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup SSH agent
+        run: |
+          eval $(ssh-agent -s)
+          echo "${{ secrets.EC2_SSH_KEY }}" > /tmp/private_key
+          chmod 600 /tmp/private_key
+          ssh-add /tmp/private_key
+
+      - name: Set permissions for Demo_kp.pem
+        run: |
+          chmod 400 Demo_kp.pem
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
@@ -22,6 +35,11 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
       - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
@@ -34,5 +52,7 @@ jobs:
             sudo apt-get install -y apache2
             sudo systemctl start apache2
             sudo systemctl enable apache2
-            cd home
-            sudo mv * /var/www/html
+            curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+            cd /var/www/html  # Adjust directory as needed
+            # Additional commands related to your Node.js setup if required
