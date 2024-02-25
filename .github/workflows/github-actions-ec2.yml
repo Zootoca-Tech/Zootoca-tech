@@ -21,12 +21,9 @@ jobs:
         run: |
           eval $(ssh-agent -s)
           echo "${{ secrets.EC2_SSH_KEY }}" > /tmp/private_key
-          chmod 600 /tmp/private_key
+          chmod 400 Demo_kp.pem
           ssh-add /tmp/private_key
 
-      - name: Set permissions for Demo_kp.pem
-        run: |
-          chmod ssh -i "Demo_kp.pem" ubuntu@ec2-34-227-158-102.compute-1.amazonaws.com
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
