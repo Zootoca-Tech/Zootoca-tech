@@ -20,10 +20,7 @@ jobs:
       - name: Setup SSH agent
         run: |
           eval $(ssh-agent -s)
-          echo "${{ secrets.EC2_SSH_KEY }}" > /tmp/private_key
-          chmod 400 Demo_kp.pem
-          ssh-add /tmp/private_key
-
+          echo "${{ secrets.EC2_SSH_KEY }}" 
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
