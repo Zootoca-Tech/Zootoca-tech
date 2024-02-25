@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to EC2 on main branch push
+    name: Deploy to EC2 on master branch push
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,7 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
 
-      - name: Setup Apache and deploy
+      - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
@@ -34,12 +34,7 @@ jobs:
             sudo apt-get install -y apache2
             sudo systemctl start apache2
             sudo systemctl enable apache2
-
-            # Ensure Apache is running and accessible
-            sudo systemctl status apache2
-
-            # Move files to the Apache web root
-            sudo mv /var/www/html/* /var/www/html/
-
-            # Restart Apache for changes to take effect
-            sudo systemctl restart apache2
+            curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+            cd /var/www/html  # Adjust directory as needed
+            # Additional commands related to your Node.js setup if required
