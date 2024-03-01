@@ -68,27 +68,39 @@ export class Home1Component implements OnInit {
     testimonials: [
       {
         image: "assets/images/testimonials/pic1.jpg",
-        role: "Architect",
-        name: "Rosalina D. William",
-        quotes: "Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support."
+        // role: "Architect",
+        name: "SSC  Max Academy",
+        quotes: "An absolute joy to work with ZOOTOCA Technology.They helped us with every aspect of designing,making videos and setting up our website and they always go extra mile with customer support and service."
       },
       {
         image: "assets/images/testimonials/pic2.jpg",
-        role: "Architect",
-        name: "Mitchal Jhon",
-        quotes: "Amazing fast and reliable customer support! The team of willing to go mile for customer service! Thanks!"
+        // role: "Interior designer",
+        name: "GoldBell Foundation",
+        quotes: "They are so responsive and timely in getting back to me.I love their design sense, and their willingness to dig down deep to understand my business and what’s important to me and the people I need to reach.I’m so thankful to ZOOTOCA."
       },
       {
         image: "assets/images/testimonials/pic3.jpg",
-        role: "Interior designer",
-        name: "Barney Smith",
-        quotes: "Great theme, just what we were looking for. Easy to install, easy to navigate. Well documented. Really enjoyed the support."
+        // role: "Interior designer",
+        name: "Annai Velankanni Shrine,Besant Nagar",
+        quotes: "Viewing a mass, whether via television or on the internet, is certainly a worthwhile activity.ZOOTOCA Technology help us to make a live mass video and other special occasion related videos in a great way.They have a young,energetic editors to make a quality videos to reach the viewers."
       },
       {
         image: "assets/images/testimonials/pic4.jpg",
-        role: "Architect",
-        name: "Rosalina D. William",
-        quotes: "Amazing fast and reliable customer support! The team of willing to go mile for customer service! Thanks!"
+        // role: "Architect",
+        name: "Foodeye",
+        quotes: "Awesome experience working with this team.They continuously gives suggestions to improve our online presence. We do not have to worry when ZOOTOCA is with us. Truly grateful for all the efforts they’ve put making our company a success today!"
+      },
+      {
+        image: "assets/images/testimonials/pic4.jpg",
+        // role: "Architect",
+        name: "YInside",
+        quotes: "Heroes of ZOOTOCA believes in client success and they have an array of tools and expertise to make that happen from digital marketing to SEO, to website design. Best of all, they have dedicated and responsive team that is open to ideas!"
+      },
+      {
+        image: "assets/images/testimonials/pic4.jpg",
+        // role: "Architect",
+        name: "Open Mic Shows",
+        quotes: "ZOOTOCA has a well equipped team to organize the events from A to Z and helps performers to showcase their talent.They have a expertise team members and extra ordinary equipments to make all the events a grand success.They also promote their shows through social media to encourage the peoples for active participation."
       }
     ]
   }
