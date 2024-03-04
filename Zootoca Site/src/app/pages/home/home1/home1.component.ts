@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home1',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Home1Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -67,40 +68,40 @@ export class Home1Component implements OnInit {
     title: "Testimonial",
     testimonials: [
       {
-        image: "assets/images/testimonials/pic1.jpg",
-        // role: "Architect",
+        image: "assets/images/testimonials/ceo1.jpeg",
+        role: "Martin",
         name: "SSC  Max Academy",
         quotes: "An absolute joy to work with ZOOTOCA Technology.They helped us with every aspect of designing,making videos and setting up our website and they always go extra mile with customer support and service."
       },
       {
-        image: "assets/images/testimonials/pic2.jpg",
-        // role: "Interior designer",
+        image: "assets/images/testimonials/ceo2.png",
+        role: "John",
         name: "GoldBell Foundation",
         quotes: "They are so responsive and timely in getting back to me.I love their design sense, and their willingness to dig down deep to understand my business and what’s important to me and the people I need to reach.I’m so thankful to ZOOTOCA."
       },
       {
-        image: "assets/images/testimonials/pic3.jpg",
-        // role: "Interior designer",
-        name: "Annai Velankanni Shrine,Besant Nagar",
-        quotes: "Viewing a mass, whether via television or on the internet, is certainly a worthwhile activity.ZOOTOCA Technology help us to make a live mass video and other special occasion related videos in a great way.They have a young,energetic editors to make a quality videos to reach the viewers."
+        image: "assets/images/testimonials/ceo3.jpeg",
+        role: "Abishake",
+        name: "Annai Velankanni Shrine",
+        quotes: "	Viewing a mass, whether via television or on the internet, is certainly a worthwhile activity.ZOOTOCA Technology help us to make a live mass video and other special occasion related videos in a great way.They have a young,energetic editors to make a quality videos to reach the viewers."
       },
       {
-        image: "assets/images/testimonials/pic4.jpg",
-        // role: "Architect",
+        image: "assets/images/testimonials/ceo4.jpg",
+        role: "Akash",
         name: "Foodeye",
         quotes: "Awesome experience working with this team.They continuously gives suggestions to improve our online presence. We do not have to worry when ZOOTOCA is with us. Truly grateful for all the efforts they’ve put making our company a success today!"
       },
       {
-        image: "assets/images/testimonials/pic4.jpg",
-        // role: "Architect",
-        name: "YInside",
+        image: "assets/images/testimonials/ceo5.jpeg",
+        role: "Reegan",
+        name: "YNside",
         quotes: "Heroes of ZOOTOCA believes in client success and they have an array of tools and expertise to make that happen from digital marketing to SEO, to website design. Best of all, they have dedicated and responsive team that is open to ideas!"
       },
       {
-        image: "assets/images/testimonials/pic4.jpg",
-        // role: "Architect",
+        image: "assets/images/testimonials/ceo3.jpeg",
+        role: "Rahul",
         name: "Open Mic Shows",
-        quotes: "ZOOTOCA has a well equipped team to organize the events from A to Z and helps performers to showcase their talent.They have a expertise team members and extra ordinary equipments to make all the events a grand success.They also promote their shows through social media to encourage the peoples for active participation."
+        quotes: "	Viewing a mass, whether via television or on the internet, is certainly a worthwhile activity.ZOOTOCA Technology help us to make a live mass video and other special occasion related videos in a great way.They have a young,energetic editors to make a quality videos to reach the viewers."
       }
     ]
   }
@@ -172,73 +173,85 @@ export class Home1Component implements OnInit {
         serial: "01",
         icon: "assets/images/em.png",
         title: "Event Management",
-        description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable."
+        description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "02",
         icon: "assets/images/seo.png",
         title: "SEO",
-        description: "We excel in driving organic leads and traffic to your website through powerful SEO strategies, fostering natural online growth."
+        description: "We excel in driving organic leads and traffic to your website through powerful SEO strategies, fostering natural online growth.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "03",
         icon: "assets/images/pg.png",
         title: "Photography",
-        description: "We effortlessly transform everyday photos into captivating masterpieces, meticulously enhancing the essence and beauty of each captured moment"
+        description: "We effortlessly transform everyday photos into captivating masterpieces, meticulously enhancing the essence and beauty of each captured moment",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "04",
         icon: "assets/images/wd.png",
         title: "Web Design",
-        description: "We create user-friendly websites that foster lasting connections, enabling you to cultivate and nurture long-term relationships with your customers."
+        description: "We create user-friendly websites that foster lasting connections, enabling you to cultivate and nurture long-term relationships with your customers.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "05",
         icon: "assets/images/ve.png",
         title: "Video Editing",
-        description: "We expertly blend visuals and sound, sculpting a seamless masterpiece that brings the narrative to life with precision and finesse."
+        description: "We expertly blend visuals and sound, sculpting a seamless masterpiece that brings the narrative to life with precision and finesse.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "06",
         icon: "assets/images/gd.png",
         title: "Graphic Design",
-        description: "We seamlessly blend creativity with precision, transforming ideas into visually captivating masterpieces through the artistry of graphic design."
+        description: "We seamlessly blend creativity with precision, transforming ideas into visually captivating masterpieces through the artistry of graphic design.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "07",
         icon: "assets/images/ms.png",
         title: "Marketing Strategy",
-        description: "We strategically connect with our audience, blending data-driven insights and compelling narratives to elevate our brand impact."
+        description: "We strategically connect with our audience, blending data-driven insights and compelling narratives to elevate our brand impact.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },  
       {
         serial: "08",
         icon: "assets/images/cw.png",
         title: "Content Writing",
-        description: "We, as content creators, blend creativity and precision to elevate brands and engage audiences effectively."
+        description: "We, as content creators, blend creativity and precision to elevate brands and engage audiences effectively.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "09",
         icon: "assets/images/im.png",
         title: "Influencer Marketing",
-        description: "We amplify brand stories through strategic influencer partnerships, creating authentic connections that captivate audiences worldwide."
+        description: "We amplify brand stories through strategic influencer partnerships, creating authentic connections that captivate audiences worldwide.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "10",
         icon: "assets/images/ma.png",
         title: "Mobile App",
-        description: "We elevate experiences through cutting-edge mobile apps, bridging innovation and convenience seamlessly."
+        description: "We elevate experiences through cutting-edge mobile apps, bridging innovation and convenience seamlessly.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "11",
         icon: "assets/images/sma.png",
         title: "Social media Ads",
-        description: "We captivate audiences with precision-targeted social media ads, creating visually stunning content that elevates your brand."
+        description: "We captivate audiences with precision-targeted social media ads, creating visually stunning content that elevates your brand.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       },
       {
         serial: "12",
         icon: "assets/images/ga.png",
         title: "Google Ads",
-        description: "We elevate businesses to new heights through the power of Google Ads, utilizing advanced technology and data-driven strategies."
+        description: "We elevate businesses to new heights through the power of Google Ads, utilizing advanced technology and data-driven strategies.",
+        PopupImage: "assets/images/service-images/seoCvr.jpg"
       }
     ]
   }
@@ -339,5 +352,7 @@ export class Home1Component implements OnInit {
     "assets/images/client-logo/4.png",
     "assets/images/client-logo/5.png",
     "assets/images/client-logo/6.png",
+    "assets/images/client-logo/GoldBell_foundation.jpg",
+    "assets/images/client-logo/ynside.webp"
   ]
 }

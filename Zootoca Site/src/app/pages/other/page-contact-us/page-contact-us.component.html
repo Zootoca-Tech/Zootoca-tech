@@ -41,7 +41,6 @@
         <div class="sx-separator bg-white bg-moving bg-repeat-x"
              style="background-image:url(assets/images/background/cross-line2.png)">
           <h3 class="sep-line-one">How we can help you?</h3>
-          <p class="text-center">Fill out the form and we’ll be in touch soon!</p>
         </div>
       </div>
     </div>
@@ -71,7 +70,8 @@
           </div>
   
           <select class="input form-control" formControlName="selectedService">
-            <option value="0" selected>Select a Service</option>
+            <option value="" selected>Select a Service</option>
+            <option>{{ serviceName }}</option>
             <option class="option-value" *ngFor="let object of servicelist" [value]="object.title">
               {{object.title}}&nbsp;
             </option>
@@ -81,9 +81,7 @@
           <div *ngIf="submitted && formControls['selectedService'].hasError('required')" class="text-danger" style="color: black;">
             Please select a service
           </div>
-          
-        
-  
+            
         <div class="msg">
           <textarea placeholder="Message" rows="20" class="form-control" formControlName="message"></textarea>
           <!-- Display validation message for Message -->
@@ -99,7 +97,6 @@
       </div>
     </div>
   </form>
-  
                         </div>
                         <div class="section col-lg-4 col-md-12 col-sm-12">
                             <div class="contact-info block-shadow bg-white bg-center p-a40"
@@ -145,8 +142,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <!-- <div class="gmap-outline">

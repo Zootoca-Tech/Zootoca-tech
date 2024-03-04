@@ -34,7 +34,7 @@ export class PageProjectGrid3ColsComponent implements OnInit {
       },
       {
         image: "assets/images/l6.jpg",
-        title: "YINSIDE",
+        title: "YNSIDE",
         serial: "04"
       },
       {
@@ -49,7 +49,7 @@ export class PageProjectGrid3ColsComponent implements OnInit {
       },
       {
         image: "assets/images/l1.jpg",
-        title: "REFIMAE",
+        title: "REFIMAC",
         serial: "06"
       }
     ],

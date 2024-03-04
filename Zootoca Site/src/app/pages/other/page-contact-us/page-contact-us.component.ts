@@ -1,42 +1,46 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { EmailService } from 'src/web-api-services/email-service.service';
 import { NotifyService } from 'src/web-api-services/notify.service';
 import { NgForm } from '@angular/forms';
-//import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-page-contact-us',
   templateUrl: './page-contact-us.component.html',
   styleUrls: ['./page-contact-us.component.css']
 })
 export class PageContactUsComponent implements OnInit{
+
   contactusform!: FormGroup;
   con: any;
   submitted: boolean = false;
   isLoading: boolean = false;
   error: any;
+  serviceName: any = '';
 
-  constructor(private _fb: FormBuilder,
-    private router: Router,
-
-    private Toastr: NotifyService,
-    private _emailservice: EmailService) { 
+  constructor(private _fb: FormBuilder, private router: Router,
+    private Toastr: NotifyService,private _emailservice: EmailService,
+    private route: ActivatedRoute) { 
   }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      this.serviceName = params['title'];
+    });
+
     this.contactusform = this._fb.group({
       userName: ['', Validators.required],
       emailAddress: ['', [Validators.required, Validators.email]],
       phoneNumber: ['', Validators.required],
-      selectedService: ['0', Validators.required],
-      message: ['', Validators.required],
+      selectedService: [this.serviceName || '', Validators.required],
+      message: [''],
     });
   }
   
   get formControls() {
     return this.contactusform.controls;
   }
+  
   OnSubmit() {
     this.submitted = true;
   
@@ -58,7 +62,7 @@ export class PageContactUsComponent implements OnInit{
     );
     this.contactusform.reset();
     this.submitted = false;
-    this.contactusform.reset({ selectedService: '0' });
+    this.contactusform.reset({ selectedService: '' });
   }
   
   //this is service list binded with html//

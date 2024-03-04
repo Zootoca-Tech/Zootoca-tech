@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-section-service',
@@ -7,19 +8,36 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SectionServiceComponent implements OnInit {
 
-  itemsToShow = 6;
+  // itemsToShow = 6;
+  expandedServices: boolean[] = [];
   @Input() data: any;
+  displayImage: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  loadMore() {
-    this.itemsToShow += 3;
+  navigateToContactUs(serviceName: any) {
+    this.router.navigate(['/other/Contact-Us'], { queryParams: { title: serviceName } });
+  }
+
+  toggleReadMore(index: number): void {
+    this.expandedServices[index] = !this.expandedServices[index];
+  }
+
+  showImage(event: any) {
+    if (!event) {
+      this.displayImage = "assets/default.png";
+    }
+    this.displayImage = event;
   }
   
-  showLess() {
-    this.itemsToShow = 6;
-  }
+  // loadMore() {
+  //   this.itemsToShow += 3;
+  // }
+  
+  // showLess() {
+  //   this.itemsToShow = 6;
+  // }
 }

@@ -1,10 +1,10 @@
 <div class="section-full  mobile-page-padding bg-gray  p-t80 p-b10 bg-repeat" style="background-image:url(assets/images/background/bg-12.jpg);">
             
-    <div class="container">
+    <div class="container-fluid">
     
         <!-- TITLE START -->
         <div class="section-head">
-            <div class="sx-separator-outer separator-left">
+            <div class="sx-separator-outer separator-center">
                 <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
                     <h3 class="sep-line-one">Our Clients</h3>
                 </div>
@@ -13,22 +13,24 @@
         <!-- TITLE END -->
                  
         <!-- carousel -->
-        <div class="section-full bg-white ">
-            <div class="container">
-                 <div class="section-content p-tb10 owl-btn-vertical-center">
+        <div class="section-full bg-gray">
+            <div class="container-fluid">
+                <div class="section-content p-tb10 owl-btn-vertical-center">
                     <div class="owl-carousel home-client-carousel-2">
                         <div class="item" *ngFor="let object of data">
                             <!-- <a routerLink="/about/about1" class="client-logo-pic"> -->
                             <img src="{{object}}" alt="">
-                              <!-- <div>
+                            <!-- <div>
                                 <span>View More</span>
-                              </div>                                       -->
+                            </div> -->
                             <!-- </a> -->
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+    </div>
     <!-- carousel end-->
     
     <div class="hilite-title text-left p-l50 text-uppercase">
