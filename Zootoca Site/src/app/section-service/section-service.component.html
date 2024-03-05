@@ -14,7 +14,6 @@
                   
                 <!-- Block one -->
                 <div class="col-lg-3 col-md-6 col-sm-12 m-b30" (click)="showImage(object.PopupImage)" *ngFor="let object of data.services; let i = index" data-bs-toggle="modal">
-                    <!-- (click)="showImage(object.PopupImage)"  data-bs-toggle="modal" data-bs-target="#imgePresnt" style="height: 95%;" -->
                     <div class="sx-icon-box-wraper  icon-count-2-outer"
                     data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal' + i">
                         <div class="icon-count-2 bg-white" style="height: 100%;">
@@ -24,11 +23,11 @@
                             </div>
                             <div>
                             <div class="icon-content">
-                                    <h6 class="sx-tilte">{{object.title}}</h6>
+                                    <h6 class="sx-tilte fw-bold">{{object.title}}</h6>
                                     <!-- <p>{{object.description}}</p> -->
-                                    {{ (expandedServices[i]) ? object.description : object.description | slice:0:45}}
+                                    <!-- {{ (expandedServices[i]) ? object.description : object.description | slice:0:45}}
                                     <span *ngIf="!expandedServices[i]">...</span>
-                                    <a style="margin-right: 30px;" class="fw-bold" href="javascript:;" *ngIf="!expandedServices[i]">Read More</a> 
+                                    <a style="margin-right: 30px;" class="fw-bold" href="javascript:;" *ngIf="!expandedServices[i]">Read More</a>  -->
                                   <div class="icon-content">
                                   </div>
                             </div>
@@ -47,7 +46,6 @@
                     <span class="text">Enquiry</span>
                     <span aria-hidden="" class="marquee">Enquiry</span>
                   </button>
-                <!-- <button class="btn btn-primary me-3" (click)="navigateToContactUs(object.title)">Enquiry</button> -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
         </div>
@@ -61,19 +59,6 @@
             </div>
         </div>
     </div>
-    
-<!-- <div class="modal fade" id="imgePresnt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="">
-            <div class="text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <img [src]="displayImage" alt="">
-            </div>
-        </div>
-    </div>
-</div> -->
 
                         <!-- ////////////////////// -->
                                 <!-- <div class="text-center">

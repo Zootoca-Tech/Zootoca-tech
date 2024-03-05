@@ -71,7 +71,7 @@
   
           <select class="input form-control" formControlName="selectedService">
             <option value="" selected>Select a Service</option>
-            <option>{{ serviceName }}</option>
+            <option *ngIf="serviceName">{{ serviceName }}</option>
             <option class="option-value" *ngFor="let object of servicelist" [value]="object.title">
               {{object.title}}&nbsp;
             </option>

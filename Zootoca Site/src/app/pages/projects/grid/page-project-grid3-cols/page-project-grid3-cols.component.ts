@@ -18,28 +18,28 @@ export class PageProjectGrid3ColsComponent implements OnInit {
     title: "Our Works",
     work: [
       {
-        image: "assets/images/l2.jpg",
+        image: "assets/images/client-logo/SSC Logo.png",
         title: "SSC MAX ACADEMY",
         serial: "01"
       },
       {
-        image: "assets/images/l1.jpg",
+        image: "assets/images/client-logo/BN Logo.png",
         title: "ANNAI VELANKANNI SHRINE",
         serial: "02"
       },
       {
-        image: "assets/images/l3.jpg",
-        title: "FOOD EYE",
+        image: "assets/images/client-logo/GoldBell_foundation.jpg",
+        title: "GOLD BELL FOUNDATION",
         serial: "03"
       },
       {
-        image: "assets/images/l6.jpg",
+        image: "assets/images/client-logo/Ynside.jpg",
         title: "YNSIDE",
         serial: "04"
       },
       {
-        image: "assets/images/l6.jpg",
-        title: "GOLD BELL FOUNDATION",
+        image: "assets/images/l3.jpg",
+        title: "FOOD EYE",
         serial: "05"
       },
       {
@@ -50,7 +50,7 @@ export class PageProjectGrid3ColsComponent implements OnInit {
       {
         image: "assets/images/l1.jpg",
         title: "REFIMAC",
-        serial: "06"
+        serial: "07"
       }
     ],
   }
