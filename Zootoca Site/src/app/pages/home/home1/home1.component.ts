@@ -83,7 +83,7 @@ export class Home1Component implements OnInit {
         image: "assets/images/testimonials/ceo3.jpeg",
         role: "Abishake",
         name: "Annai Velankanni Shrine",
-        quotes: "	Viewing a mass, whether via television or on the internet, is certainly a worthwhile activity.ZOOTOCA Technology help us to make a live mass video and other special occasion related videos in a great way.They have a young,energetic editors to make a quality videos to reach the viewers."
+        quotes: "Viewing a mass, whether via television or on the internet, is certainly a worthwhile activity.ZOOTOCA Technology help us to make a live mass video and other special occasion related videos in a great way.They have a young,energetic editors to make a quality videos to reach the viewers."
       },
       {
         image: "assets/images/testimonials/ceo4.jpg",
