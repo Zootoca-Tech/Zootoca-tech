@@ -23,7 +23,7 @@ export class PageProjectGrid3ColsComponent implements OnInit {
         serial: "01"
       },
       {
-        image: "assets/images/client-logo/BN Logo.png",
+        image: "assets/images/client-logo/bn.jpg",
         title: "ANNAI VELANKANNI SHRINE",
         serial: "02"
       },
