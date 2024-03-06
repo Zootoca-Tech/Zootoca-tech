@@ -11,19 +11,32 @@ export class ServiceDetailComponent implements OnInit {
   title: any;
   description: any;
   image: any;
+  icon: any;
 
-  constructor(private route: ActivatedRoute) { }
-
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute) { 
     this.route.queryParams.subscribe(params => {
+      console.log(params)
       // Access the title and description parameters
       this.title = params['title'];
       this.description = params['description'];
       this.image = params['img'];
-      console.log('Titleeeeeeeeeeee:', this.title);
+      // this.icon = params['icon']
+      console.log('Titleeeeeeeeeeee:', this.title,this.image, this.icon);
       console.log('Descriptionnnnnnnnnnnnn:', this.description);
       // Use the title and description in your component as needed
     });
+  }
+
+  ngOnInit(): void {
+    // this.route.queryParams.subscribe(params => {
+    //   // Access the title and description parameters
+    //   this.title = params['title'];
+    //   this.description = params['description'];
+    //   this.image = params['img'];
+    //   console.log('Titleeeeeeeeeeee:', this.title);
+    //   console.log('Descriptionnnnnnnnnnnnn:', this.description);
+    //   // Use the title and description in your component as needed
+    // });
   }
 
   banner = {

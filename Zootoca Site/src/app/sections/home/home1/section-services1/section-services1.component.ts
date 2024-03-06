@@ -19,6 +19,7 @@ export class SectionServices1Component implements OnInit {
   initialCardsToShow: number = 6;
   incrementBy: number = 6;
   displayImage: any;
+  icon: any;
 
 
   
@@ -28,41 +29,54 @@ export class SectionServices1Component implements OnInit {
   }
 
 
-  showImage(event: any) {
-    if (!event) {
-      this.displayImage = "assets/default.png";
-    }
-    console.log("Imageeeeeeeeeee:", event);
-    this.displayImage = event;
-  }
-
-  // showImage(imageUrl: string): void {
-  //   this.displayImage = imageUrl;
-  //    console.log('Clicked item ID:', this.displayImage);
+  // showImage(event: any) {
+  //   if (!event) {
+  //     this.displayImage = "assets/default.png";
+  //   }
+  //   console.log("Imageeeeeeeeeee:", event);
+  //   this.displayImage = event;
   // }
-  
 
-  // toggleDescription(serial: string): void {
-  //   console.log('Clicked item ID:', serial);
-  //   this.wholedata =this.data.services;
-  //   const selectedItem = this.wholedata.find((item: any) => item.serial === serial);
-  //   if (selectedItem) {
+  // showImage(object: string): void {
+  //   console.log(object,"object")
+  //   const selectedItem = this.data.service.find((item: any) => item.serial === object);
+  //   // if (selectedItem) {
   //     this.serviceTitle = selectedItem.title;
   //     console.log('ServiceTitle:', this.serviceTitle);
   //     this.serviceDescription = selectedItem.description;
   //     console.log('desc:', this.serviceDescription);
   //     this.image = selectedItem.image;
-  //     this.router.navigate(['section-page-banner'], {
-  //       queryParams: { title: this.serviceTitle, description: this.serviceDescription }
-  //     });
-  //     this.router.navigate(['/services/service-detail'], {
-  //       queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image}
-  //     });
-  //   }
+  //   this.router.navigate(['/services/service-detail'],{
+  //   queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image} }
+  //   // { queryParams: { serial: object}
+  //   // }
+  //   );
+  //   // this.displayImage = imageUrl;
+  //   //  console.log('Clicked item ID:', this.displayImage);
+  //   // this.router.navigate(['/other/Contact-Us'], { queryParams: { title: serviceName } });
   // }
+  
 
-  // loadMoreCards() {
-  //   this.initialCardsToShow += this.incrementBy;
-  // }
+  toggleDescription(serial: string): void {
+    console.log('Clicked item ID:', serial);
+    this.wholedata =this.data.services;
+    console.log(this.wholedata,"wholedata")
+    const selectedItem = this.wholedata.find((item: any) => item.serial === serial);
+    if (selectedItem) {
+      this.serviceTitle = selectedItem.title;
+      console.log('ServiceTitle:', this.serviceTitle);
+      this.serviceDescription = selectedItem.description;
+      console.log('desc:', this.serviceDescription);
+      this.image = selectedItem.imageIn;
+      // this.icon = selectedItem.icon;
+      this.router.navigate(['/services/service-detail'], {
+        queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image}
+      });
+    }
+  }
+
+  loadMoreCards() {
+    this.initialCardsToShow += this.incrementBy;
+  }
 
 }

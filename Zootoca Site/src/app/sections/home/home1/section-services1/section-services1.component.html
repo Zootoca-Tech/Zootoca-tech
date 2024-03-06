@@ -17,7 +17,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 m-b30"  *ngFor="let object of data.services">
                             <!-- <span class="icon-count-number">{{object.serial}}</span><br> -->
                             <figure class="snip1581 roll" >
-                                    <img class="cardimg" src="{{object.icon}}" alt="" (click)="showImage(object.imageIn)"
+                                    <img class="cardimg" src="{{object.icon}}" alt="" (click)="toggleDescription(object.serial)"
                                     data-bs-toggle="modal" data-bs-target="#imgePresnt"><br>
                             </figure>   	
                 </div>  
@@ -36,8 +36,8 @@
 </div> 
 <!-- Modal -->
 <!-- Modal -->
-<div class="modal fade" id="imgePresnt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Adjust modal size as needed -->
+<!-- <div class="modal fade" id="imgePresnt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> Adjust modal size as needed
         <div class="">
             <div class="text-right">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -47,4 +47,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+
