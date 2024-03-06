@@ -354,11 +354,11 @@ export class Home1Component implements OnInit {
   client = [
     "assets/images/client-logo/BN Logo.png",
     "assets/images/client-logo/SSC Logo.png",
-    "assets/images/client-logo/3.png",
+    "assets/images/client-logo/refimac.webp",
+    "assets/images/client-logo/GoldBell_foundation.jpg",
+    "assets/images/client-logo/ynside.webp",
     "assets/images/client-logo/4.png",
     "assets/images/client-logo/5.png",
-    "assets/images/client-logo/6.png",
-    "assets/images/client-logo/GoldBell_foundation.jpg",
-    "assets/images/client-logo/ynside.webp"
+    "assets/images/client-logo/6.png"
   ]
 }

@@ -38,20 +38,20 @@ export class PageProjectGrid3ColsComponent implements OnInit {
         serial: "04"
       },
       {
+        image: "assets/images/client-logo/Refimac.jpg",
+        title: "REFIMAC",
+        serial: "05"
+      },
+      {
         image: "assets/images/l3.jpg",
         title: "FOOD EYE",
-        serial: "05"
+        serial: "06"
       },
       {
         image: "assets/images/l6.jpg",
         title: "OPEN MIC SHOWS",
-        serial: "06"
-      },
-      {
-        image: "assets/images/l1.jpg",
-        title: "REFIMAC",
         serial: "07"
-      }
+      },
     ],
   }
 
