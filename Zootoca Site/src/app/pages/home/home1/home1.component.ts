@@ -180,84 +180,84 @@ export class Home1Component implements OnInit {
         icon: "assets/images/em.png",
         title: "Event Management",
         description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Event Management.jpg"
       },
       {
         serial: "02",
         icon: "assets/images/seo.png",
         title: "SEO",
         description: "We excel in driving organic leads and traffic to your website through powerful SEO strategies, fostering natural online growth.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/search engine.jpg"
       },
       {
         serial: "03",
         icon: "assets/images/pg.png",
         title: "Photography",
         description: "We effortlessly transform everyday photos into captivating masterpieces, meticulously enhancing the essence and beauty of each captured moment",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Photography & Videography.jpg"
       },
       {
         serial: "04",
         icon: "assets/images/wd.png",
         title: "Web Design",
         description: "We create user-friendly websites that foster lasting connections, enabling you to cultivate and nurture long-term relationships with your customers.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Web Design.jpg"
       },
       {
         serial: "05",
         icon: "assets/images/ve.png",
         title: "Video Editing",
         description: "We expertly blend visuals and sound, sculpting a seamless masterpiece that brings the narrative to life with precision and finesse.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Video_Editing.jpg"
       },
       {
         serial: "06",
         icon: "assets/images/gd.png",
         title: "Graphic Design",
         description: "We seamlessly blend creativity with precision, transforming ideas into visually captivating masterpieces through the artistry of graphic design.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Graphic Design .jpg"
       },
       {
         serial: "07",
         icon: "assets/images/ms.png",
         title: "Marketing Strategy",
         description: "We strategically connect with our audience, blending data-driven insights and compelling narratives to elevate our brand impact.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Social Media Marketing .jpg"
       },  
       {
         serial: "08",
         icon: "assets/images/cw.png",
         title: "Content Writing",
         description: "We, as content creators, blend creativity and precision to elevate brands and engage audiences effectively.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Content_Creation.jpg"
       },
       {
         serial: "09",
         icon: "assets/images/im.png",
         title: "Influencer Marketing",
         description: "We amplify brand stories through strategic influencer partnerships, creating authentic connections that captivate audiences worldwide.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Influencer Marketing.jpg"
       },
       {
         serial: "10",
         icon: "assets/images/ma.png",
         title: "Mobile App",
         description: "We elevate experiences through cutting-edge mobile apps, bridging innovation and convenience seamlessly.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/Android & IOS App.jpg"
       },
       {
         serial: "11",
         icon: "assets/images/sma.png",
         title: "Social media Ads",
         description: "We captivate audiences with precision-targeted social media ads, creating visually stunning content that elevates your brand.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/social media add.jpg"
       },
       {
         serial: "12",
         icon: "assets/images/ga.png",
         title: "Google Ads",
         description: "We elevate businesses to new heights through the power of Google Ads, utilizing advanced technology and data-driven strategies.",
-        PopupImage: "assets/images/service-images/seoCvr.jpg"
+        PopupImage: "assets/images/service-images/G_ads.jpg"
       }
     ]
   }
@@ -353,10 +353,10 @@ export class Home1Component implements OnInit {
 
   client = [
     "assets/images/client-logo/BN Logo.png",
-    "assets/images/client-logo/SSC Logo.png",
-    "assets/images/client-logo/refimac.webp",
-    "assets/images/client-logo/GoldBell_foundation.jpg",
     "assets/images/client-logo/ynside.webp",
+    "assets/images/client-logo/refimac_.png",
+    "assets/images/client-logo/SSC Logo.png",
+    "assets/images/client-logo/GoldBell_foundation.jpg",
     "assets/images/client-logo/4.png",
     "assets/images/client-logo/5.png",
     "assets/images/client-logo/6.png"
