@@ -1,0 +1,7 @@
+
+.container.new {
+    /* background-image: url('src/assets/images/service-images/background_container.jpg'); */
+    /* background-color: #A6A6ED; */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+}

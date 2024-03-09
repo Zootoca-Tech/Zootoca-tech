@@ -1,0 +1,29 @@
+/* styles.css */
+.whatsapp-logo {
+
+  cursor: pointer;
+  /* justify-content: center; */
+  /* border-width: 0;
+  top: 500px;
+  display: flex;
+  width: auto;
+  /* align-items: center; */
+  /* align-self: end;
+  border-radius: 500px; */
+  background-color: var(--color-whatsapp-green-light);
+    position: fixed;
+    top: 500px;
+    right: 1px;
+    aspect-ratio: 3/2;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    z-index: 1000;
+    mix-blend-mode:hard-light;
+    transform: translate(-50%, -50%);
+  }
+
+  .whatsapp-logo img {
+    height: auto; 
+  }
+  

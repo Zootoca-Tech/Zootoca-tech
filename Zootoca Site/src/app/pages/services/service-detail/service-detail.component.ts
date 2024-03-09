@@ -12,6 +12,9 @@ export class ServiceDetailComponent implements OnInit {
   description: any;
   image: any;
   icon: any;
+  subtitle: any;
+  subdescription: any;
+  subimage: any;
 
   constructor(private route: ActivatedRoute) { 
     this.route.queryParams.subscribe(params => {
@@ -20,9 +23,13 @@ export class ServiceDetailComponent implements OnInit {
       this.title = params['title'];
       this.description = params['description'];
       this.image = params['img'];
+      this.subtitle = params['subtit'];
+      this.subdescription = params['subdes'];
+      this.subimage = params['subimg'];
       // this.icon = params['icon']
       console.log('Titleeeeeeeeeeee:', this.title,this.image, this.icon);
       console.log('Descriptionnnnnnnnnnnnn:', this.description);
+      console.log("subdatas", this.subdescription,this.subtitle, this.subimage)
       // Use the title and description in your component as needed
     });
   }
