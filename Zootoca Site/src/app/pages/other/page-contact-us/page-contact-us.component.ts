@@ -17,6 +17,7 @@ export class PageContactUsComponent implements OnInit{
   isLoading: boolean = false;
   error: any;
   serviceName: any = '';
+  serviceNamedtl: any;
 
   constructor(private _fb: FormBuilder, private router: Router,
     private Toastr: NotifyService,private _emailservice: EmailService,
@@ -27,12 +28,16 @@ export class PageContactUsComponent implements OnInit{
     this.route.queryParams.subscribe(params => {
       this.serviceName = params['title'];
     });
+    this.route.queryParams.subscribe(params => {
+      this.serviceNamedtl = params['title'];
+      console.log(this.serviceNamedtl)
+    });
 
     this.contactusform = this._fb.group({
       userName: ['', Validators.required],
       emailAddress: ['', [Validators.required, Validators.email]],
       phoneNumber: ['', Validators.required],
-      selectedService: [this.serviceName || '', Validators.required],
+      selectedService: [this.serviceName || this.serviceNamedtl|| '', Validators.required],
       message: [''],
     });
   }

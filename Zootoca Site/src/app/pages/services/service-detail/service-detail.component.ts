@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./service-detail.component.css']
 })
 export class ServiceDetailComponent implements OnInit {
+  @Input() data: any;
   title: any;
   description: any;
   image: any;
@@ -15,8 +16,12 @@ export class ServiceDetailComponent implements OnInit {
   subtitle: any;
   subdescription: any;
   subimage: any;
+  wholedata: any;
+  serviceTitle: any;
+  serviceDescription: any;
+  subimg: any;
 
-  constructor(private route: ActivatedRoute) { 
+  constructor(private route: ActivatedRoute, private router: Router) { 
     this.route.queryParams.subscribe(params => {
       console.log(params)
       // Access the title and description parameters
@@ -26,24 +31,23 @@ export class ServiceDetailComponent implements OnInit {
       this.subtitle = params['subtit'];
       this.subdescription = params['subdes'];
       this.subimage = params['subimg'];
-      // this.icon = params['icon']
-      console.log('Titleeeeeeeeeeee:', this.title,this.image, this.icon);
-      console.log('Descriptionnnnnnnnnnnnn:', this.description);
-      console.log("subdatas", this.subdescription,this.subtitle, this.subimage)
+      // // this.icon = params['icon']
+      // console.log('Titleeeeeeeeeeee:', this.title,this.image, this.icon);
+      // console.log('Descriptionnnnnnnnnnnnn:', this.description);
+      // console.log("subdatas", this.subdescription,this.subtitle, this.subimage)
       // Use the title and description in your component as needed
     });
   }
 
+  toggleDescription(serial: string): void {
+    console.log('Clicked item ID:', serial);
+  
+      this.router.navigate(['/other/Contact-Us'], { queryParams: { title: serial } });
+     
+  }
+
+
   ngOnInit(): void {
-    // this.route.queryParams.subscribe(params => {
-    //   // Access the title and description parameters
-    //   this.title = params['title'];
-    //   this.description = params['description'];
-    //   this.image = params['img'];
-    //   console.log('Titleeeeeeeeeeee:', this.title);
-    //   console.log('Descriptionnnnnnnnnnnnn:', this.description);
-    //   // Use the title and description in your component as needed
-    // });
   }
 
   banner = {
