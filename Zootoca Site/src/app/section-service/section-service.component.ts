@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
 })
 export class SectionServiceComponent implements OnInit {
 
-  // itemsToShow = 6;
   expandedServices: boolean[] = [];
   @Input() data: any;
   displayImage: any;
@@ -32,12 +31,4 @@ export class SectionServiceComponent implements OnInit {
     }
     this.displayImage = event;
   }
-  
-  // loadMore() {
-  //   this.itemsToShow += 3;
-  // }
-  
-  // showLess() {
-  //   this.itemsToShow = 6;
-  // }
 }
