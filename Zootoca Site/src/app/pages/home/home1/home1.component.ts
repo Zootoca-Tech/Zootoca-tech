@@ -241,7 +241,7 @@ export class Home1Component implements OnInit {
       {
         serial: "10",
         icon: "assets/images/ma.png",
-        title: "Mobile App",
+        title: "Mobile Apps",
         description: "We elevate experiences through cutting-edge mobile apps, bridging innovation and convenience seamlessly.",
         PopupImage: "assets/images/service-images/Android & IOS App.jpg"
       },
