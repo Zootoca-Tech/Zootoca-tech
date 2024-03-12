@@ -107,6 +107,21 @@ export class Services2Component implements OnInit {
       },
       {
         serial: "08",
+        icon: "/assets/images/service-images/Mobile_apps.jpeg",
+        title: "Mobile Apps",
+        description: `Mobile apps have transformed the way businesses operate, offering new avenues for customer engagement, sales, and service delivery. Today, companies across industries use mobile apps to streamline processes, enhance customer experiences, and drive revenue growth.
+        From e-commerce giants like Amazon and Alibaba to ride-sharing platforms like Uber and Lyft, mobile apps have reshaped entire industries, disrupting traditional business models and revolutionizing the way we interact with products and services.`,
+        imageIn: "/assets/images/service-images/mobileapps_1.jpeg",
+        subtitle:`The Way We Interact with Technology`,
+        subdescription:`As technology continues to evolve, so too will mobile apps. Emerging trends like augmented reality (AR), virtual reality (VR), and the Internet of Things (IoT) are poised to revolutionize the app landscape, offering new possibilities for immersive experiences and interconnected ecosystems.
+
+        Artificial intelligence (AI) and machine learning (ML) will play an increasingly prominent role in app development, powering personalized recommendations, predictive analytics, and intelligent automation.
+        
+        With each new innovation, mobile apps will continue to shape the way we live, work, and play, driving progress and unlocking new opportunities for individuals and businesses alike.`,
+        subimage:`/assets/images/service-images/appssubimg.jpeg`
+      },
+      {
+        serial: "09",
         icon: "assets/images/service-images/Influencer_Marketing.jpg",
         title: "Influencer Marketing",
         description: `Influencer marketing is a form of collaboration between brands and individuals who have a significant and engaged following on social media platforms. These influencers, often experts or enthusiasts in a particular niche, have built credibility and trust with their audience, making them valuable partners for brands seeking to reach and influence their target demographic.`,
@@ -117,7 +132,7 @@ export class Services2Component implements OnInit {
         subimage:`/assets/images/service-images/Influencer_Marketing_1.jpeg`
       },
       {
-        serial: "09",
+        serial: "10",
         icon: "assets/images/service-images/G_ads.jpg",
         title: "Google Ads",
         description: `Google Ads, formerly known as Google AdWords, is a powerful online advertising platform that enables businesses to reach potential customers through targeted ads displayed on Google's search engine results pages (SERPs), websites, and apps. With its vast reach, advanced targeting options, and measurable results, Google Ads offers businesses of all sizes the opportunity to increase visibility, drive traffic, and grow revenue. In this guide, we'll explore the fundamentals of Google Ads, including setup, optimization, and best practices for maximizing your advertising investment.
@@ -128,7 +143,7 @@ export class Services2Component implements OnInit {
         subimage:`/assets/images/service-images/Google_Ads.jpeg`
       },
       {
-        serial: "10",
+        serial: "11",
         icon: "assets/images/service-images/Content_Creation.jpg",
         title: "Content Creation",
         description: `In today's digital landscape, content creation has become a cornerstone of marketing strategy, serving as a means to engage, educate, and inspire audiences across various platforms. From blog posts and social media updates to videos and podcasts, creating high-quality content is essential for building brand awareness, driving traffic, and nurturing relationships with your audience. In this guide, we'll explore the art of content creation, including strategies, best practices, and tips for producing compelling and impactful content.
@@ -139,7 +154,7 @@ export class Services2Component implements OnInit {
         subimage:`/assets/images/service-images/Content_creation_1.jpeg`
       },
       {
-        serial: "10",
+        serial: "11",
         icon: "assets/images/service-images/Marketing_Strategy.jpg",
         title: "Marketing Strategy",
         description: `A marketing strategy serves as a roadmap for businesses to achieve their goals, attract customers, and drive growth in a competitive marketplace. Whether you're a startup, small business, or multinational corporation, a well-defined marketing strategy provides clarity, direction, and focus for your marketing efforts. In this guide, we'll explore the essential components of a marketing strategy, from defining objectives to implementing tactics and measuring success.

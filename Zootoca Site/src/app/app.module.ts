@@ -123,6 +123,7 @@ import { ToastrModule } from 'ngx-toastr';  //added for popup notification statu
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SectionServiceComponent } from './section-service/section-service.component';
 import { SectionProcessComponent } from './section-process/section-process.component';
+import { WhatsappLogoComponent } from './whatsapp-logo/whatsapp-logo.component';
 
 
 @NgModule({
@@ -242,7 +243,8 @@ import { SectionProcessComponent } from './section-process/section-process.compo
     TestimonialsComponent,
     WhatWeDoComponent,
     SectionServiceComponent,
-    SectionProcessComponent
+    SectionProcessComponent,
+    WhatsappLogoComponent
   ],
   imports: [
     BrowserModule,

@@ -218,17 +218,25 @@ h1 {
     transform: translate(0);
   }
 } */
+.button-container {
+  position: relative;
+  text-align: right;
+  margin-top: 1px; /* Adjust margin-top as needed */
+}
 .btn-shine {
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%);
-  padding: 12px 48px; */
- 
-  color: #fff;
+
+  display: inline-block;
+  padding: 1px 10px; /* Adjust padding as needed */
+  border-radius: 50px; /* For capsule shape */
+  background-color: #ff6600; /* Button background color */
+  color: #ffffff; /* Button text color */
+  text-decoration: none;
+  /* border: none;
+  outline: none; */
+  cursor: pointer;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+  background: linear-gradient(to right, #dd7878 0, #fff 10%, #4d4d4d 20%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,7 +245,6 @@ h1 {
   -webkit-text-size-adjust: none;
   font-weight: 600;
   font-size: 16px;
-  text-decoration: none;
   white-space: nowrap;
 }
 @-moz-keyframes shine {

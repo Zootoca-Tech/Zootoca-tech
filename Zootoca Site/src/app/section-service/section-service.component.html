@@ -4,55 +4,59 @@
             <!-- TITLE START -->
             <div class="section-head">
                 <div class="sx-separator-outer separator-left">
-                    <div class="sx-separator bg-white bg-moving bg-repeat-x" style="background-image:url(assets/images/background/cross-line2.png)">
+                    <div class="sx-separator bg-white bg-moving bg-repeat-x"
+                        style="background-image:url(assets/images/background/cross-line2.png)">
                         <h3 class="sep-line-one ">{{data.title}}</h3>
                     </div>
                 </div>
-            </div>                   
-            <!-- TITLE END -->
-         
-              <div class="row">
-                  
-                <!-- Block one -->
-                <div class="col-lg-3 col-md-6 col-sm-12 m-b30" (click)="showImage(object.PopupImage)" *ngFor="let object of data.services; let i = index" data-bs-toggle="modal">
-                    <section class="reveal">
-                    <div class="sx-icon-box-wraper  icon-count-2-outer"
-                    data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal' + i">
-                        <div class="icon-count-2 bg-white" style="height: 100%;">
-                            <span class="icon-count-number">{{object.serial}}</span>
-                            <div class="icon-xl inline-icon m-b5 scale-in-center">
-                                <img [src]="object.icon">
-                            </div>
-                            <div>
-                            <div class="icon-content">
-                                    <h6 class="sx-tilte fw-bold">{{object.title}}</h6>
-                                  <div class="icon-content">
-                                  </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div> 
-                </section>
-  <!-- Modal -->
-  <div class="modal fade" [id]="'exampleModal' + i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-gray d-flex justify-content-between align-items-center">
-            <h4 class="modal-title" id="exampleModalLabel">{{object.title}}</h4>
-            <div class="d-flex">
-                <button class="btn-23 me-3" (click)="navigateToContactUs(object.title)">
-                    <span class="text">Enquiry</span>
-                    <span aria-hidden="" class="marquee">Enquiry</span>
-                  </button>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-        <!-- <div class="modal-body"> -->
-            <img [src]="displayImage" alt="">
-        <!-- </div> -->
-      </div>
-    </div>
-  </div>      	
+            <!-- TITLE END -->
+
+            <div class="row">
+
+                <!-- Block one -->
+                <div class="col-lg-3 col-md-6 col-sm-12 m-b30" (click)="showImage(object.PopupImage)"
+                    *ngFor="let object of data.services; let i = index" data-bs-toggle="modal">
+                    <section class="reveal">
+                        <div class="sx-icon-box-wraper  icon-count-2-outer" data-bs-toggle="modal"
+                            [attr.data-bs-target]="'#exampleModal' + i">
+                            <div class="icon-count-2 bg-white" style="height: 100%;">
+                                <span class="icon-count-number">{{object.serial}}</span>
+                                <div class="icon-xl inline-icon m-b5 scale-in-center">
+                                    <img [src]="object.icon">
+                                </div>
+                                <div>
+                                    <div class="icon-content">
+                                        <h6 class="sx-tilte fw-bold">{{object.title}}</h6>
+                                        <div class="icon-content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Modal -->
+                    <div class="modal fade" [id]="'exampleModal' + i" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-gray d-flex justify-content-between align-items-center">
+                                    <h4 class="modal-title" id="exampleModalLabel">{{object.title}}</h4>
+                                    <div class="d-flex">
+                                        <button class="btn-23 me-3" (click)="navigateToContactUs(object.title)">
+                                            <span class="text">Enquiry</span>
+                                            <span aria-hidden="" class="marquee">Enquiry</span>
+                                        </button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                </div>
+                                <!-- <div class="modal-body"> -->
+                                <img [src]="displayImage" alt="">
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
