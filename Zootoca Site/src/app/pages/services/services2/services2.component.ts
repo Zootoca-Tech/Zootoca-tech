@@ -77,11 +77,33 @@ export class Services2Component implements OnInit {
         title: "Graphic Design",
         description: `Graphic design is the art of visual communication, where creativity meets functionality to convey messages, ideas, and emotions through images, typography, colors, and layout. From logos and branding to advertising and web design, graphic design plays a pivotal role in shaping our visual landscape. In this guide, we'll delve into the world of graphic design, exploring its principles, techniques, and applications.
         Understanding these principles is essential for creating visually appealing and effective designs. Whether it's arranging elements on a page or choosing colors and fonts, adherence to these principles ensures harmony and clarity in design.`,
-        imageIn: "/assets/images/service-images/Graphic_2.jpeg",
+        imageIn: "/assets/images/service-images/grapdsgn.png",
         subtitle:`Building Strong Brand Identity`,
-        subdescription:`Graphic design plays a pivotal role in shaping brand identity and perception. A cohesive visual identity, including logos, color palettes, typography, and imagery, helps distinguish brands from competitors and fosters brand recognition and loyalty. Work closely with clients to understand their values, target audience, and market positioning, and translate these into visually compelling brand assets.
-        `,
-        subimage:`/assets/images/service-images/Graphic_design_1.jpeg`
+        subdescription:`Graphic design plays a pivotal role in shaping brand identity and perception. A cohesive visual identity, including logos, color palettes, typography, and imagery, helps distinguish brands from competitors and fosters brand recognition and loyalty. Work closely with clients to understand their values, target audience, and market positioning, and translate these into visually compelling brand assets.`,
+        subimage:`/assets/images/service-images/grapdsgn1.png`,
+        subheading: [
+        "Social Media Graphics", 
+        "Motion Graphics",
+        "Ad Creative",
+        "Logo Design",
+        "Branding Design",
+        "Web Design",
+        "UI/UX Design",
+        "Infographics",
+        "Poster Design"
+        ],
+        subescription: [
+          "We design visuals for various social media platforms, including posts, cover images, profile pictures, and promotions.",
+          "Creating vibrant graphics, often utilized in videos, presentations, and advertisements, to obtain information or enrich visual appeal.",
+          "We offer static and move ad creative, visions, and take-ups for testing your route to better outcomes across social media.",
+          "We Create outstanding and memorable logos that convey a brand's identity.Our logos are leave a lasting impression.",
+          "We develop a constant visual identity for a brand, including logos, colour schemes, typography, and brand procedures.",
+          "We design website layout, user interface, and visual characteristics to provide a cohesive and user-friendly online presence.",
+          "We focus on the digital products user experience and user interface design, such as websites and mobile applications",
+          "We design visually attractive and informative illustrations that present complex details in a digestible format.",
+          "Eye-catching posters design services we offer for events, concerts, and various promotional purposes.",
+
+        ]
       },
       {
         serial: "06",

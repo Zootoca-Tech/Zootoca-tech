@@ -20,6 +20,8 @@ export class ServiceDetailComponent implements OnInit {
   serviceTitle: any;
   serviceDescription: any;
   subimg: any;
+  subheading: any;
+  subdescription1: any;
 
   constructor(private route: ActivatedRoute, private router: Router) { 
     this.route.queryParams.subscribe(params => {
@@ -31,6 +33,10 @@ export class ServiceDetailComponent implements OnInit {
       this.subtitle = params['subtit'];
       this.subdescription = params['subdes'];
       this.subimage = params['subimg'];
+      this.subheading = params['subheading']
+      this.subdescription1 = params['subdescription1']
+      console.log('subdescription1:', this.subdescription1);
+
       // // this.icon = params['icon']
       // console.log('Titleeeeeeeeeeee:', this.title,this.image, this.icon);
       // console.log('Descriptionnnnnnnnnnnnn:', this.description);

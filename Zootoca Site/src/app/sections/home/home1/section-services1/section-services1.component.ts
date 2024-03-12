@@ -23,6 +23,8 @@ export class SectionServices1Component implements OnInit {
   subtitle: any;
   subdescription: any;
   subimg: any;
+  subheading: any;
+  subdescription1: any;
 
 
   
@@ -75,9 +77,12 @@ export class SectionServices1Component implements OnInit {
       this.subtitle = selectedItem.subtitle;
       this.subdescription = selectedItem.subdescription;
       this.subimg = selectedItem.subimage;
+      this.subheading = selectedItem.subheading;
+      this.subdescription1 = selectedItem.subescription;
+      console.log('sub headign',this.subheading )
       // this.icon = selectedItem.icon;
       this.router.navigate(['/services/service-detail'], {
-        queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image, subtit:this.subtitle, subdes: this.subdescription , subimg: this.subimg}
+        queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image, subtit:this.subtitle, subdes: this.subdescription , subimg: this.subimg, subheading:this.subheading, subdescription1:this.subdescription1}
       });
     }
   }
