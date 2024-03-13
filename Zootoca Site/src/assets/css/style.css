@@ -15675,7 +15675,7 @@ form.woocommerce-ordering:after {
 /* Windows Scroll */
 /* Width */
 ::-webkit-scrollbar {
-    width: 11px;
+    width: 10px;
 }
 
 /* Track */
