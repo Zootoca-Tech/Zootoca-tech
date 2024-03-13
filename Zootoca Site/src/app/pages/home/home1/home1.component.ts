@@ -180,7 +180,8 @@ export class Home1Component implements OnInit {
         icon: "assets/images/em.png",
         title: "Event Management",
         description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable.",
-        PopupImage: "assets/images/service-images/Event Management.jpg"
+        PopupImage: "assets/images/service-images/Event Management.jpg",
+        subtitle:`Real-time Seo`
       },
       {
         serial: "02",
@@ -208,7 +209,7 @@ export class Home1Component implements OnInit {
         icon: "assets/images/ve.png",
         title: "Video Editing",
         description: "We expertly blend visuals and sound, sculpting a seamless masterpiece that brings the narrative to life with precision and finesse.",
-        PopupImage: "assets/images/service-images/Video_Editing.jpg"
+        PopupImage: "assets/images/video editing.jpg"
       },
       {
         serial: "06",
@@ -229,7 +230,7 @@ export class Home1Component implements OnInit {
         icon: "assets/images/cw.png",
         title: "Content Writing",
         description: "We, as content creators, blend creativity and precision to elevate brands and engage audiences effectively.",
-        PopupImage: "assets/images/service-images/Content_Creation.jpg"
+        PopupImage: "assets/images/content creation.jpg"
       },
       {
         serial: "09",
@@ -257,7 +258,7 @@ export class Home1Component implements OnInit {
         icon: "assets/images/ga.png",
         title: "Google Ads",
         description: "We elevate businesses to new heights through the power of Google Ads, utilizing advanced technology and data-driven strategies.",
-        PopupImage: "assets/images/service-images/G_ads.jpg"
+        PopupImage: "assets/images/google ads.jpg"
       }
     ]
   }
@@ -357,8 +358,5 @@ export class Home1Component implements OnInit {
     "assets/images/client-logo/refimac_.png",
     "assets/images/client-logo/SSC Logo.png",
     "assets/images/client-logo/GoldBell_foundation.jpg",
-    "assets/images/client-logo/4.png",
-    "assets/images/client-logo/5.png",
-    "assets/images/client-logo/6.png"
   ]
 }

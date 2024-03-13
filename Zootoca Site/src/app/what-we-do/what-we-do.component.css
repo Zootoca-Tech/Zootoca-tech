@@ -2,16 +2,3 @@
     aspect-ratio: 3/2;
     object-fit: contain;
 }
-
-/* //////////////////////////// */
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-    }
-    
-    .reveal.active {
-    transform: translateY(0px);
-    opacity: 1;
-    }

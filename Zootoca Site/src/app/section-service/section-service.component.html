@@ -51,9 +51,12 @@
                                             aria-label="Close"></button>
                                     </div>
                                 </div>
-                                <!-- <div class="modal-body"> -->
-                                <img [src]="displayImage" alt="">
-                                <!-- </div> -->
+                                <div class="image-container">
+                                    <img [src]="displayImage" alt="">
+                                    <div class="readmore">
+                                    <a (click)="redirect(object.title)" class="site-button-link">Read More</a>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>

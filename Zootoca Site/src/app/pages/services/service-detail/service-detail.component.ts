@@ -43,6 +43,17 @@ export class ServiceDetailComponent implements OnInit {
       // console.log("subdatas", this.subdescription,this.subtitle, this.subimage)
       // Use the title and description in your component as needed
     });
+
+    this.route.queryParams.subscribe(params => {
+      console.log(params)
+      // Access the title and description parameters
+      this.title = params['title'];
+      this.description = params['description'];
+      this.image = params['img'];
+      this.subtitle = params['subtit'];
+      this.subdescription = params['subdes'];
+      this.subimage = params['subimg'];
+    });
   }
 
   toggleDescription(serial: string): void {
