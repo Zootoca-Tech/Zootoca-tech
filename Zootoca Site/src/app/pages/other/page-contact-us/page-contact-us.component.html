@@ -70,7 +70,7 @@
           </div>
   
           <select class="input form-control" formControlName="selectedService">
-            <option value="" class="text-dark" selected>Select a Service</option>
+            <option value="" class="option-value text-dark" selected>Select a Service</option>
             <option class="option-value" *ngIf="serviceName">{{ serviceName }}</option>
             <option class="option-value" *ngFor="let object of servicelist" [value]="object.title">
               {{object.title}}&nbsp;
