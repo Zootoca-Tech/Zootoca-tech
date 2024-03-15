@@ -9,13 +9,17 @@
     <div class="page-content">
     
         <!-- INNER PAGE BANNER -->
-        <app-section-page-banner [data]="banner"></app-section-page-banner>
+        <!-- <app-section-page-banner [data]="banner"></app-section-page-banner> -->
         <!-- INNER PAGE BANNER END -->
 
         <!-- SECTION CONTENT START -->
-        <div class="section-full p-t80 p-b50 mobile-page-padding">
+        <div class="section-full p-b50 mobile-page-padding">
+              <button class="btn-23 me-3" style="margin-left: 1300px;" (click)="toggleDescription(title)">
+                    <span class="text">Enquiry</span>
+                    <span aria-hidden="" class="marquee">Enquiry</span>
+                </button>
             <div class="container">
-                
+              
                 <!-- GALLERY CONTENT START -->
                  <div class="row">
                     <!-- <div class="col-lg-4 col-md-12 sticky_column">
@@ -58,7 +62,7 @@
                     <div class="col-lg-12 col-md-12">
                         <div class="section-content">
                             <div class="service-single-block m-b30"  *ngIf="title && description">
-                                <h3 class="m-t30 sx-tilte">{{title}}</h3>
+                                <h3 class="m-t30 sx-tilte text-center">{{title}}</h3>
                                 <p class="subdescription-container" style="font-size:17px;">{{description}}</p><br> 
                                 <div class="d-flex justify-content-center align-items-center">
                                 <img src="{{image}}" alt="" style="width: 95%; height:95%;">

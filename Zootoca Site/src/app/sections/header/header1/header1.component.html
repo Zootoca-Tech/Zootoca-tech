@@ -56,7 +56,7 @@
                         <li [routerLinkActive]="'active'">
                             <a routerLink="/other/Contact-Us">Contact Us<app-loader></app-loader></a>
                         </li>
-                        <li style="margin-left: 600px; margin-top: 3px;">
+                        <li *ngIf="Btn" style="margin-left: 600px; margin-top: 3px;">
                             <button routerLink="/other/Contact-Us">
                                 Get In Touch
                                 <div class="star-1">
