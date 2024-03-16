@@ -56,7 +56,7 @@ export class PageProjectGrid3ColsComponent implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/3.jpg",
+    image: "https://starbright.co.za/wp-content/uploads/2023/03/Marketing-Agency-in-Pretoria.png",
     title: "Our Works",
     description: "With creativity as our compass and determination as our fuel, we transform ideas into impactful works that resonate with brilliance and redefine industry standards.",
     page: "Works"

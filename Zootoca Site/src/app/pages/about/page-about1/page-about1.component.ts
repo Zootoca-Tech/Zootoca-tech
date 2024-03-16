@@ -45,7 +45,7 @@ export class PageAbout1Component implements OnInit {
   }
 
   about = {
-    image:"assets/new_images/Aboutimage.jpg",
+    image:"assets/new_images/About_us.jpg",
     //image: "assets/images/background/bg5.jpg",
     title: "Get to know us, get to work with us",
     description: "We are an integrated digital marketing company,who channelize client’s budget in online & offline campaigns or building your brand image for ensuring better future. we are a full service digital media company helping global brands communicate better with your customers.we help businesses achieve their goals through our outcome-oriented and data-driven digital marketing strategies.<br><br>we believe that all great ideas are born out of deep-rooted strategic thinking,By diving into a brand’s purpose,we create measurable and successful ideas that result in creative works that will work.<br><br>we arrive at a plan to achieve a goal while being ridiculous in expectation but feasible in execution.Trust us,we’ll leave you shocked & surprised.<br><br>In a world of monotonous marketing we’re the rebels,the misfits and the creative masterminds who dare to think outside the box.Say goodbye to the ordinary and Let’s dive into the EXTRAORDINARY with our ZOOTOCA."
