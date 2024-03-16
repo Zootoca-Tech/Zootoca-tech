@@ -39,4 +39,10 @@ export class AppComponent implements AfterViewInit {
       }, 500);
     })(jQuery);
   }
+
+  sendToTop() {
+    document.documentElement.scrollTop = 0; // For modern browsers
+  document.body.scrollTop = 0; // For older browsers
+  
+  }
 }
