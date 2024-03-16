@@ -38,12 +38,6 @@ export class ServiceDetailComponent implements OnInit {
       this.subdescription1 = params['subdescription1'];
       this.title2 =  params['title2'];
       console.log('subdescription1:', this.subdescription1);
-
-      // // this.icon = params['icon']
-      // console.log('Titleeeeeeeeeeee:', this.title,this.image, this.icon);
-      // console.log('Descriptionnnnnnnnnnnnn:', this.description);
-      // console.log("subdatas", this.subdescription,this.subtitle, this.subimage);
-      // Use the title and description in your component as needed
     });
 
     this.route.queryParams.subscribe(params => {

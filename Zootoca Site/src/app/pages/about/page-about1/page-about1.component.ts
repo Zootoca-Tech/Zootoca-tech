@@ -141,24 +141,29 @@ export class PageAbout1Component implements OnInit {
     team: [
       {
         image: "assets/images/our-team5/1.jpg",
-        name: "Johnny Jackman",
-        role: "Architect"
+        name: "Billvin Rex Vincent",
+        role: "Founder",
+        Detail:`An ambitious,young and dynamic founder  Mr.Billvin Rex Vincent B.E.,Dip in News presenting and Anchoring.,who is being a pillar of  ZOOTOCA TECHNOLOGIES Pvt  Ltd. He has a substantial Experience in Civil Engineering,along with roles as a social media co-ordinator and been a incharge of youtube channels.Throughout his career he has successfully managed engineering projects and established a thriving tech company.
+        He is an expertise with effective social media co-ordination and content creation sets him apart.He always ready to guide the employee.He always used to say “EMPOWER YOUR POTENTIAL”.He believes that smartwork helps to lead ZOOTOCA TECHNOLOGIES to become a prominent player in the tech industry,contributes innovative solutions to society.His dedicaton to advancing knowledge in the current trends,bridging gap between the marketing and society,and nurturing young talented team in the field of digital media marketing.
+        `
       },
       {
         image: "assets/images/our-team5/2.jpg",
-        name: "Daniel Rickman",
-        role: "Architect"
+        name: "Franklin",
+        role: "Founder",
+        Detail:`A Creative,determined and innovative founder Mr.Franklin B.E.,MBA.,Dip inVisual effects., who is being a great influencer for the success of ZOOTOCA Technologies.He is an excel in digital media marketing ,leveraging various platforms to optimize brand visibility and engagement.He is proficient in visual effects,He enhance the project with stunning  graphics and animations,elevating their impact.His background in business administration ensures strategic planning and efficient 
+        execution of marketing campaigns.He possess an exceptional talent in team management,fostering collaboration and synergy among diverse team members to achieve the goals of ZOOTOCA efficiently.He motivates the emsultployee to build a positive work culture so that we can drive impactful resuts in dynamic business environment.`
       },
-      {
-        image: "assets/images/our-team5/3.jpg",
-        name: "Mark Norwich",
-        role: "Architect"
-      },
-      {
-        image: "assets/images/our-team5/4.jpg",
-        name: "Nich Jonas",
-        role: "Architect"
-      }
+      // {
+      //   image: "assets/images/our-team5/3.jpg",
+      //   name: "Mark Norwich",
+      //   role: "Architect"
+      // },
+      // {
+      //   image: "assets/images/our-team5/4.jpg",
+      //   name: "Nich Jonas",
+      //   role: "Architect"
+      // }
     ]
   }
 
