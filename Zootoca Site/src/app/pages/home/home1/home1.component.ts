@@ -24,19 +24,19 @@ export class Home1Component implements OnInit {
     description: "Welcome to Zootoca Technologies, a dynamic and innovative digital media company dedicated to shaping the future of content creation, distribution, and engagement. Our passion lies in harnessing the power of technology to transform ideas into captivating digital experiences.",
     images: [
       {
-        image: "assets/images/about-slider/1.jpg"
+        image: "assets/images/AboutUs Images/a6.jpg"
       },
       {
-        image: "assets/images/about-slider/2.jpg"
+        image: "assets/images/AboutUs Images/a5.jpg"
+      }, 
+      {
+        image: "assets/images/AboutUs Images/a4.jpg"
       },
       {
-        image: "assets/images/about-slider/3.jpg"
+        image: "assets/images/AboutUs Images/a2.jpg"
       },
       {
-        image: "assets/images/about-slider/4.jpg"
-      },
-      {
-        image: "assets/images/about-slider/5.jpg"
+        image: "assets/images/AboutUs Images/a3.jpg"
       }
     ]
   }
@@ -179,9 +179,13 @@ export class Home1Component implements OnInit {
         serial: "01",
         icon: "assets/images/em.png",
         title: "Event Management",
-        description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable.",
+        // description: "We specialize in crafting and executing seamless, extraordinary events that leave a lasting impression, making your moments truly unforgettable.",
         PopupImage: "assets/images/service-images/Event Management.jpg",
-        subtitle:`Real-time Seo`
+        description: "we specialize in crafting unforgettable events tailored to your unique vision. Our comprehensive event management services encompass everything from initial concept development to flawless execution, ensuring that every detail is meticulously planned and executed to perfection. Whether you're planning a corporate conference, a grand gala, a wedding celebration, or a social gathering, we are here to bring your vision to life and create an experience that will leave a lasting impression",
+        imageIn: "/assets/images/service-images/event_management_2.webp",
+        subtitle:`Crafting Unforgettable Experiences`,
+        subdescription:`we specialize in crafting unforgettable events tailored to your unique vision. Our comprehensive event management services encompass everything from initial concept development to flawless execution, ensuring that every detail is meticulously planned and executed to perfection. Whether you're planning a corporate conference, a grand gala, a wedding celebration, or a social gathering, we are here to bring your vision to life and create an experience that will leave a lasting impression.`,
+        subimage:`/assets/images/service-images/Event_Management_1.jpeg`
       },
       {
         serial: "02",
