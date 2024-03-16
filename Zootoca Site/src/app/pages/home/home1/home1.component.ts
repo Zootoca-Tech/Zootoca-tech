@@ -24,19 +24,19 @@ export class Home1Component implements OnInit {
     description: "Welcome to Zootoca Technologies, a dynamic and innovative digital media company dedicated to shaping the future of content creation, distribution, and engagement. Our passion lies in harnessing the power of technology to transform ideas into captivating digital experiences.",
     images: [
       {
-        image: "assets/images/about-slider/1.jpg"
+        image: "assets/images/AboutUs Images/a6.jpg"
       },
       {
-        image: "assets/images/about-slider/2.jpg"
+        image: "assets/images/AboutUs Images/a5.jpg"
       },
       {
-        image: "assets/images/about-slider/3.jpg"
+        image: "assets/images/AboutUs Images/a4.jpg"
       },
       {
-        image: "assets/images/about-slider/4.jpg"
+        image: "assets/images/AboutUs Images/a2.jpg"
       },
       {
-        image: "assets/images/about-slider/5.jpg"
+        image: "assets/images/AboutUs Images/a3.jpg"
       }
     ]
   }
