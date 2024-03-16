@@ -32,32 +32,14 @@
                         <li [routerLinkActive]="'active'">
                             <a routerLink="/services/Our-Services">Services<app-loader></app-loader></a>
                         </li>
-                        <!-- <li [routerLinkActive]="'active'">
-                                <a href="javascript:void(0);">Pages</a>
-                                <ul class="sub-menu">
-                                    <li [routerLinkActive]="'active'">
-                                        <a href="javascript:void(0);">Services</a>
-                                        <ul class="sub-menu">
-                                            <li><a routerLink="/services/services2">Service Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li [routerLinkActive]="'active'">
-                                        <a href="javascript:void(0);">Team</a>
-                                        <ul class="sub-menu">
-                                       <li><a routerLink="/team/team-single">Team Detail</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li> -->
-
                         <li [routerLinkActive]="'active'">
                             <a routerLink="/projects/Our-Works">Our Works<app-loader></app-loader></a>
                         </li>
                         <li [routerLinkActive]="'active'">
                             <a routerLink="/other/Contact-Us">Contact Us<app-loader></app-loader></a>
                         </li>
-                        <li *ngIf="Btn" style="margin-left: 600px; margin-top: 3px;">
-                            <button routerLink="/other/Contact-Us">
+                    </ul>
+                            <button class="ml-auto" *ngIf="Btn" routerLink="/other/Contact-Us">
                                 Get In Touch
                                 <div class="star-1">
                                   <svg
@@ -173,10 +155,9 @@
                                   </svg>
                                 </div>
                               </button>
-                        </li>
-                    </ul>
-            
+                   
                 </div>
+               
 
                 <!-- <div class="header-nav nav-dark navbar-collapse collapse justify-content-start collapse">
                         <ul class=" nav navbar-nav">
