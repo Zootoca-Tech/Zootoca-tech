@@ -14,11 +14,8 @@
 
         <!-- SECTION CONTENT START -->
         <div class="section-full p-b50 mobile-page-padding">
-              <button class="btn-23 me-3" style="margin-left: 1300px;" (click)="toggleDescription(title)">
-                    <span class="text">Enquiry</span>
-                    <span aria-hidden="" class="marquee">Enquiry</span>
-                </button>
             <div class="container">
+
               
                 <!-- GALLERY CONTENT START -->
                  <div class="row">
@@ -61,13 +58,32 @@
                     
                     <div class="col-lg-12 col-md-12">
                         <div class="section-content">
-                            <div class="service-single-block m-b30"  *ngIf="title && description">
-                                <h3 class="m-t30 sx-tilte text-center">{{title}}</h3>
-                                <p class="subdescription-container" style="font-size:17px;">{{description}}</p><br> 
+                            <div class="service-single-block m-b30"  *ngIf="title && description"><br><br><br>
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <section class="title container">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <h1>{{title}}</h1>
+                                                <div class="seperator"></div><br>
+                                                <p style="font-size:22px;" [innerHTML]="title2"></p>
+                                              </div>
+                                            </div>
+                                          </section>    
+                                        <h3 class="m-t30 sx-tilte text-center"></h3>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <button class="btn-23 me-3 small-button" style="justify-content: right;" (click)="toggleDescription(title)">
+                                            <span class="text">Enquiry</span>
+                                            <span aria-hidden="" class="marquee">Enquiry</span>
+                                        </button> 
+                                    </div>
+                                </div>
+                                <p class="subdescription-container" style="font-size:17px;" [innerHTML]="description"></p>
                                 <div class="d-flex justify-content-center align-items-center">
                                 <img src="{{image}}" alt="" style="width: 95%; height:95%;">
                             </div><br><br>
-							
+
                                 <!-- <div class="sx-media">
                                     <img src="{{service.thumb}}" alt="">
                                 </div> -->
@@ -117,7 +133,20 @@
                  </div>   
                 <!-- GALLERY CONTENT END -->
             </div>
-
+            <section class="title container" *ngIf="title && description">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="font-weight-bold h3" > {{subtitle}}</div><br>
+                        <p class="subdescription-container "> {{subdescription}}<p>
+                    <!-- <div class="seperator"></div> -->
+                </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <img src="{{subimage}}" alt="" style="width: 80%; height:90%;">
+                    </div>
+               
+                </div>
+              </section>
+              <!-- <section class="title container" *ngIf="title && description">
             <div class="container new" *ngIf="title && description">
                 <div class=" row">
                     <div class="col-lg-6 ">
@@ -130,6 +159,7 @@
                     </div>
                 </div>
             </div>
+        </section> -->
         </div>
 
         <section class="title container">

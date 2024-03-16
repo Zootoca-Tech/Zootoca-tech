@@ -214,13 +214,18 @@ cursor:pointer;
 }
 
 .btn-23 {
-  border-radius: 99rem;
-  border-width: 2px;
+  border-radius: 10px;
+  border-width: 1px;
   overflow: hidden;
   padding: 0.8rem 3rem;
   position: relative;
 }
-
+.small-button {
+  width: 100px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  padding: 5px 10px; /* Adjust padding as needed */
+  font-size: 14px; /* Adjust font size as needed */
+}
 .btn-23 span {
   display: grid;
   inset: 0;
