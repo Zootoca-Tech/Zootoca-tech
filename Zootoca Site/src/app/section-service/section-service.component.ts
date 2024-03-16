@@ -20,6 +20,7 @@ export class SectionServiceComponent implements OnInit {
   subimg: any;
   subheading: any;
   subdescription1: any;
+  subdes: any;
 
   constructor(private router: Router) { }
 
@@ -34,18 +35,20 @@ export class SectionServiceComponent implements OnInit {
     if (selectedItem) {
       console.log(selectedItem,"selected all")
       this.serviceTitle = selectedItem.title;
-      console.log('ServiceTitle:', this.serviceTitle);
+      // console.log('ServiceTitle:', this.serviceTitle);
       this.serviceDescription = selectedItem.description;
-      console.log('desc:', this.serviceDescription);
+      // console.log('desc:', this.serviceDescription);
       this.image = selectedItem.imageIn;
       this.subtitle = selectedItem.subtitle;
+      this.subdes = selectedItem.subdescription; 
+      // console.log("subdesc: ",this.subdes);
       this.subimg = selectedItem.subimage;
       this.subheading = selectedItem.subheading;
       this.subdescription1 = selectedItem.subescription;
-      console.log('sub headign',this.subheading )
+      // console.log('sub headign',this.subheading )
       // this.icon = selectedItem.icon;
       this.router.navigate(['/services/service-detail'], {
-        queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image, subtit:this.subtitle, subdes: this.subdescription , subimg: this.subimg, subheading:this.subheading, subdescription1:this.subdescription1}
+        queryParams: { title: this.serviceTitle, description: this.serviceDescription , img :this.image, subtit:this.subtitle, subdes: this.subdes , subimg: this.subimg, subheading:this.subheading, subdescription1:this.subdescription1}
       });
     }
   }
