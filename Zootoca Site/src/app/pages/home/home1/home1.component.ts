@@ -332,7 +332,7 @@ export class Home1Component implements OnInit {
         title2: "  “Discovering the  BEAUTY through our lens” ",
         description: `A picture is worth a thousand words, but video tells the whole story. ZOOTOCA Technologies will help to obtain the customer through eye-catching pictures and videos. <br> Photography and videography are powerful mediums for storytelling, self-expression, and capturing the beauty of the world around us. From documenting life's special moments to creating visual masterpieces, photographers and videographers play a vital role in preserving memories and shaping our collective narrative. In this guide, we'll delve into the art of photography and videography, exploring techniques, equipment, and creative approaches to capturing stunning images and videos.`,
         imageIn: "/assets/images/service-images/vdography&photography.jpeg",
-        PopupImage: "/assets/Photography__Videography.webp",
+        PopupImage: "/assets/Photography_11.jpeg",
         subtitle:`The Art of Photography and Videography`,
         subdescription:`Photography and videography are powerful story telling mediums, capable of evoking emotions, conveying messages, and capturing moments in time. Whether you're shooting portraits, landscapes, street scenes, or documentaries, strive to tell a compelling story through your images and videos. Look for interesting subjects, moments, and details that communicate a narrative or evoke a sense of wonder and curiosity.`,
         subimage:`/assets/images/service-images/phot_vdo_1.jpeg`,
