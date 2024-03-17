@@ -168,7 +168,7 @@ export class Services2Component implements OnInit {
             "We have  an expert video editors will use different cinematic editing techniques to make your video looks like a real movie you’d watch in theaters.We will assure you that your video will have a proper sound and powerful visual effects and so on ",
             "You will need to handle a lot of raw footage if you want to make a documentary video,editing plays a vital and challenging role. Zootoca team will help you to manage the projects and make easier for you.",
             "This involves capturing the event’s highlights,interview,presentations and any other relevant content to create a compelling video recap.We satisfy your expectations and requirements for the video.",
-            "If you are looking for a platform with a strong community of users and creative tools,Reals and shorts are good option for connecting with people.Zootoca team will help you to shoot the videos,edit,add music and effects."
+            "If you are looking for a platform with a strong community of users and creative tools,Reels and shorts are good option for connecting with people.Zootoca team will help you to shoot the videos,edit,add music and effects."
           ]
       },
 
@@ -201,7 +201,7 @@ export class Services2Component implements OnInit {
             "We have  an expert video editors will use different cinematic editing techniques to make your video looks like a real movie you’d watch in theatres.We will assure you that your video will have a proper sound and powerful visual effects and so on.",
             "You will need to handle a lot of raw footage if you want to make a documentary video,editing plays a vital and challenging role.Zootoca team will help you to manage the projects and make easier for you",
             "This involves capturing the event’s highlights,interview,presentations and any other relevant content to create a compelling video recap.We satisfy your expectations and requirements for the video.",
-            "If you are looking for a platform with a strong community of users and creative tools,Reals and shorts are good option for connecting with people.Zootoca team will help you to shoot the videos,edit,add music and effects."
+            "If you are looking for a platform with a strong community of users and creative tools,Reels and shorts are good option for connecting with people.Zootoca team will help you to shoot the videos,edit,add music and effects."
           ]
       },
       {
