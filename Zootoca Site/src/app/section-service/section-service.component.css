@@ -127,35 +127,41 @@
   bottom: 60px;
   left: 140px;
 }
-/* .readmore {
-  position: absolute;
-  bottom: 60px;
-  left: 140px;
-} */
 
-
-/* ///////to do on button responsive//// */
-/* .readmore{
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  bottom: auto;
+.reslink{
   display: inline-block;
-  font-weight: 500;
-  position: relative;
-  padding-left: 10px;
-  font-size: 14px;
-  z-index: 1;
-  text-transform: uppercase;
+	font-weight: 500;
+	position: relative;
+	padding-left: 0;
+	font-size: 14px;
+	z-index:1;
+	text-transform:uppercase;
 }
 
-.readmore:hover {
+
+
+/* Media query for mobile devices */
+@media all and (min-width:0px) and (max-width: 1024px) {
+	.reslink {
+	  right: 90px;
+	top: 30px;
+	}
+}
+
+.reslink i{
+	display: inline-block;
+	margin: -4px 0px 0px 5px;
+	font-size: 16px;
+	vertical-align: middle;
+	line-height: 24px;
+}
+
+.reslink:hover {
 	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.readmore:before{
+.reslink:before{
 	content: '';
 	left: 0px;
 	bottom: 0px;
@@ -172,16 +178,33 @@
 	-o-transition: all 0.5s linear;
 	transition: all 0.5s linear;	
 }
-.readmore:hover:before{
+.reslink:hover:before{
 	background:none;
-} */
+}
 
-
-
-
-/* .icon-count-2-outer {
-  width: 260px; Set the width as needed
-  height: 250px; Set the height as needed 
-
-} */
-
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 8px;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 8px;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
