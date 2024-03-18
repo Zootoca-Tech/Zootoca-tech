@@ -14,7 +14,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .top-bar {
       flex-direction: column;
       text-align: center;
@@ -27,7 +27,7 @@
   .justify-content-end {
       justify-content: center;
   }
-}
+} 
 
 .option-value {
   font-family: "Times New Roman", Times, serif; 
@@ -69,6 +69,14 @@ margin-bottom: 25px;
 display: flex;
 justify-content: center;
 }
+/* Media query for mobile devices */
+@media (min-width:0px) and (max-width: 1024px) {
+  .contact-form {
+    display: flex;
+    justify-content: normal;
+    
+  }
+}
 
 .input-fields{
 display: flex;
@@ -83,7 +91,16 @@ border: 0px;
 border-bottom: 2px solid #f5f7f2;
 padding: 10px;
 color: #f5f7f8;
-width: 150%;
+width: 200%;
+}
+  
+/* input fields set for mobile view */
+
+@media (max-width: 767px) {
+  .input-fields .input,
+  .msg textarea {
+    width: calc(100% - 20px); /* Adjust width to fit mobile screen width with margin */
+  }
 }
 
 .msg textarea{

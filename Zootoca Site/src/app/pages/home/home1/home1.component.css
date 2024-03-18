@@ -63,3 +63,10 @@ body {
       justify-content: center;
   }
 }
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .mobhide {
+    display: none; /* Hide the heading on mobile devices */
+  }
+}
