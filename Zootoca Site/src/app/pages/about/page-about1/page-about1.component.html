@@ -24,55 +24,55 @@
         <!-- INNER PAGE BANNER END -->
 
         <!-- Your HTML -->
-
-        <div class="row col-md-12">
-            <div class="section-full col-lg-6 mobile-page-padding bg-white  p-t80 p-b80">
-                <div class="container">
-                    <div class="section-head pt-4" (window:scroll)="onScroll()">
-                        <div class="sx-separator-outer separator-center">
-                            <div class="sx-separator bg-white bg-moving bg-repeat-x"
-                                style="background-image:url(assets/images/background/cross-line2.png)">
-                                <h3 class="sep-line-one">Our Vision</h3>
+        <div class="section-full mobile-page-padding bg-white p-t80 p-b80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="section-head pt-4" (window:scroll)="onScroll()">
+                            <div class="sx-separator-outer separator-center">
+                                <div class="sx-separator bg-white bg-moving bg-repeat-x"
+                                    style="background-image:url(assets/images/background/cross-line2.png)">
+                                    <h3 class="sep-line-one">Our Vision</h3>
+                                </div>
                             </div>
+                            <h2 class="animi text-center pt-3" style="font-size: 40px;" [ngClass]="{'visible': isTextVisible}">
+                                <span>"KEEP</span>
+                                <span>YOUR</span>
+                                <span>EYES</span>
+                                <span>ON</span>
+                                <span>THE</span>
+                                <span class="colr">STARS</span><br>
+                                <span>AND</span><br>
+                                <span>WE</span>
+                                <span>WILL</span>
+                                <span>BE</span>
+                                <span>YOUR</span>
+                                <span class="colr">STAIRS"</span>
+                            </h2>
                         </div>
-
-                        <h2 class="animi text-center  pt-3" style="font-size: 40px;" [ngClass]="{'visible': isTextVisible}">
-                            <span>"KEEP</span>
-                            <span>YOUR</span>
-                            <span>EYES</span>
-                            <span>ON</span>
-                            <span>THE</span>
-                            <span class="colr">STARS</span><br>
-                            <span>AND</span><br>
-                            <span>WE</span>
-                            <span>WILL</span>
-                            <span>BE</span>
-                            <span>YOUR</span>
-                            <span class="colr">STAIRS"</span>
-                        </h2>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="section-head pt-4" (window:scroll)="onScroll()">
+                            <div class="sx-separator-outer separator-center">
+                                <div class="sx-separator bg-white bg-moving bg-repeat-x"
+                                    style="background-image:url(assets/images/background/cross-line2.png)">
+                                    <h3 class="sep-line-one">Our Mission</h3>
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <h5 class="font text-justify">To place people at the heart of digital enterprise,
+                                    We make you to tell <span class="colr">WOW</span> till you reach the rainbow.</h5>
+                            </div>
+                            <h2 class="animi justify-content-center text-center" [ngClass]="{'visible': isTextVisible}">
+                                <span><span class="colr">W</span>- WONDER</span><br>
+                                <span><span class="colr" style="margin-left: 45px;">O</span>- OPTIMISTIC</span><br>
+                                <span><span class="colr">W</span>- WISEACRE</span>
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="section-full col-lg-6 mobile-page-padding bg-white  p-t80 p-b80">
-                <div class="section-head pt-4" (window:scroll)="onScroll()">
-                    <div class="sx-separator-outer separator-center">
-                        <div class="sx-separator bg-white bg-moving bg-repeat-x"
-                            style="background-image:url(assets/images/background/cross-line2.png)">
-                            <h3 class="sep-line-one">Our Mission</h3>
-                        </div>
-                    </div>
-                    <div class="pt-4">
-                        <h5 class="font">To place people at the heart of digital enterprise,
-                            We make you to tell <span class="colr">WOW</span> till you reach the rainbow.</h5>
-                    </div>
-                    <h2 class="animi justify-content-center text-center" [ngClass]="{'visible': isTextVisible}">
-                        <span><span class="colr">W</span>- WONDER</span><br>
-                        <span><span class="colr" style="margin-left: 45px;">O</span>- OPTIMISTIC</span><br>
-                        <span><span class="colr">W</span>- WISEACRE</span>
-                    </h2>
-                </div>
-            </div>
-
+        </div>
             <!-- </div> -->
             <!-- ABOUT COMPANY START -->
             <app-section-about2 [data]='about'></app-section-about2>
@@ -86,59 +86,6 @@
             <!-- <app-section-awards1 [data]='awards'></app-section-awards1>   -->
             <!-- OUR AWARDS SECTION END -->
 
-
-            <!-- OUR TEAM START -->
-            <div class="row col-md-12 container">
-                <div class="sx-separator-outer separator-center">
-                    <br>
-                    <div class="sx-separator bg-white bg-moving bg-repeat-x"
-                        style="background-image:url(assets/images/background/cross-line2.png)">
-                        <h3 class="sep-line-one">Our Founders</h3>
-                    </div>
-                </div>
-                <div class="section-full col-lg-6 mobile-page-padding bg-white  p-t80 p-b80">
-                    <div class="container">
-                        <div class="section-head pt-4 text-justify align-items-center" (window:scroll)="onScroll()">
-                            <div style="display: flex; flex-direction: column; align-items: center;">
-                                <h2 class="font-weight-bold">Billvin Rex Vincent</h2>
-                                <p style="text-align: center;">(Director)</p>
-                            </div> <br>
-                            <p> An ambitious,young and dynamic founder <b>Mr.Billvin Rex Vincent B.E.,Dip in News
-                                presenting and Anchoring </b> ., who is being a pillar of <b>ZOOTOCA TECHNOLOGIES Pvt Ltd.</b>
-                                He has a substantial Experience in Civil Engineering,along with roles as a social media
-                                co-ordinator and been a incharge of youtube channels.Throughout his career he has
-                                successfully managed engineering projects and established a thriving tech company.
-                                He is an expertise with effective social media co-ordination and content creation sets
-                                him apart.He always ready to guide the employee.He always used to say
-                           “EMPOWER YOUR POTENTIAL”.He believes that smartwork helps to lead ZOOTOCA
-                            TECHNOLOGIES to become a prominent player in the tech industry,contributes innovative
-                            solutions to society.His dedicaton to advancing knowledge in the current trends,bridging gap
-                            between the marketing and society,and nurturing young talented team in the field of digital
-                            media marketing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-full col-lg-6 mobile-page-padding bg-white  p-t80 p-b80">
-                    <div class="section-head pt-4 text-justify  align-items-center" (window:scroll)="onScroll()">
-                        <div style="display: flex; flex-direction: column; align-items: center;">
-                            <h2 class="font-weight-bold">Franklin</h2>
-                            <p style="text-align: center;">(Director)</p><br>
-                        </div>
-                        <p>A Creative,determined and innovative founder <b>Mr.Franklin B.E.,MBA.,Dip inVisual effects.,</b>
-                            who is being a great influencer for the success of <b>ZOOTOCA Technologies</b>. He is an excel in
-                            digital media marketing ,leveraging various platforms to optimize brand visibility and
-                            engagement.He is proficient in visual effects,He enhance the project with stunning graphics
-                            and animations,elevating their impact.His background in business administration ensures
-                            strategic planning and efficient execution of marketing campaigns.He possess an exceptional
-                            talent in team management,fostering collaboration and synergy among diverse team members to
-                            achieve the goals of ZOOTOCA efficiently.He motivates the emsultployee to build
-                            a positive work culture so that we can drive impactful resuts in dynamic business
-                            environment.</p>
-                    </div>
-                </div>
-
-            </div>
             <!-- <app-section-team2 [data]='team'></app-section-team2> -->
             <!-- OUR Team END -->
 
@@ -151,11 +98,10 @@
             <!-- <app-section-testimonials2 [data]='testimonials'></app-section-testimonials2>  -->
             <!-- TESTIMONIAL  END -->
 
-        </div>
         <!-- CONTENT END -->
 
         <!-- FOOTER START -->
         <app-footer1 [data]='footerData'></app-footer1>
         <!-- FOOTER END -->
-
+            </div>
     </div>

@@ -206,7 +206,7 @@ export class Services2Component implements OnInit {
       },
       {
         serial: "08",
-        icon: "/assets/images/service-images/Mobile_apps.jpeg",
+        icon: "/assets/images/service-images/Mobile_apps.jpg",
         title: "Mobile Apps",
         title2: "  “READY TO SHOWCASE YOU” ",
         description: `ZOOTOCA Technologies have a  well equipped  app developers will help you to reach out all your expectations.We uses programming languages and development skills to create,test and develop application on mobile devices. <br> Mobile apps have transformed the way businesses operate, offering new avenues for customer engagement, sales, and service delivery. Today, companies across industries use mobile apps to streamline processes, enhance customer experiences, and drive revenue growth. From e-commerce giants like Amazon and Alibaba to ride-sharing platforms like Uber and Lyft, mobile apps have reshaped entire industries, disrupting traditional business models and revolutionizing the way we interact with products and services.`,
