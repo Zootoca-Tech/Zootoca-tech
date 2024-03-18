@@ -122,14 +122,66 @@
   position: relative;
   display: inline-block;
 }
-
 .readmore {
   position: absolute;
   bottom: 60px;
   left: 140px;
 }
+/* .readmore {
+  position: absolute;
+  bottom: 60px;
+  left: 140px;
+} */
 
-.icon-count-2-outer {
-  width: 260px; /* Set the width as needed */
-  height: 250px; /* Set the height as needed */
+
+/* ///////to do on button responsive//// */
+/* .readmore{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  padding-left: 10px;
+  font-size: 14px;
+  z-index: 1;
+  text-transform: uppercase;
 }
+
+.readmore:hover {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.readmore:before{
+	content: '';
+	left: 0px;
+	bottom: 0px;
+	height: 5px;
+	background-color: #d7b39a;
+	width: 80%;
+	position: absolute;
+	z-index: -1;
+	-webkit-border-radius: 0px 50% 15px 0px;
+	border-radius: 0px 50% 15px 0px;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;	
+}
+.readmore:hover:before{
+	background:none;
+} */
+
+
+
+
+/* .icon-count-2-outer {
+  width: 260px; Set the width as needed
+  height: 250px; Set the height as needed 
+
+} */
+

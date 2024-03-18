@@ -407,7 +407,7 @@ export class Home1Component implements OnInit {
       {
         serial: "10",
         icon: "assets/images/sma.png",
-        title: "SOCIAL MEDIA ADS & Google Ads",
+        title: "Social Media Ads & Google Ads",
         PopupImage: "assets/images/service-images/social media add.jpg",
         title2: " “SMART ADVERTISING STARTS HERE” ",
         description: `Google Ads, formerly known as Google AdWords, is a powerful online advertising platform that enables businesses to reach potential customers through targeted ads displayed on Google's search engine results pages (SERPs), websites, and apps. With its vast reach, advanced targeting options, and measurable results, Google Ads offers businesses of all sizes the opportunity to increase visibility, drive traffic, and grow revenue. In this guide, we'll explore the fundamentals of Google Ads, including setup, optimization, and best practices for maximizing your advertising investment.
