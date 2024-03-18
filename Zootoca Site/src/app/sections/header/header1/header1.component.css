@@ -1,12 +1,12 @@
 button {
     position: relative;
-    padding: 8px 15px;
-    background: #0a0909;
-    font-size: 17px;
+    padding: 8px 10px;
+    background: white;
+    font-size: 14px;
     font-weight: 500;
-    color: #f7dac5;
-    border: 3px solid #050505;
-    border-radius: 8px;
+    color: #0c0b0a;
+    border: 2px solid #050505;
+    border-radius: 6px;
     box-shadow: 0 0 0 #fec1958c;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -14,9 +14,9 @@ button {
   
   .star-1 {
     position: absolute;
-    top: 20%;
-    left: 20%;
-    width: 25px;
+    top: 15%;
+    left: 15%;
+    width: 20px;
     height: auto;
     filter: drop-shadow(0 0 0 #fffdef);
     z-index: -5;
@@ -79,8 +79,8 @@ button {
   }
   
   button:hover {
-    background: transparent;
-    color: #0a0909;
+    background: black;
+    color: #fefcfc;
     box-shadow: 0 0 25px #fec1958c;
   }
   
@@ -148,3 +148,13 @@ button {
     fill: #080808;
   }
   
+  /* CSS to style the button */
+#mobile-side-drawer {
+  color: #fff; /* Change color to white or any other color you prefer */
+  background-color: #f3efef; /* Change background color to a darker shade */
+  border-color: #575353; /* Change border color to match background color */
+}
+
+#mobile-side-drawer:hover {
+  background-color: #555;
+}
