@@ -122,89 +122,94 @@
   position: relative;
   display: inline-block;
 }
+
 .readmore {
   position: absolute;
   bottom: 60px;
   left: 140px;
 }
 
-.reslink{
+.reslink {
   display: inline-block;
-	font-weight: 500;
-	position: relative;
-	padding-left: 0;
-	font-size: 14px;
-	z-index:1;
-	text-transform:uppercase;
+  font-weight: 500;
+  position: relative;
+  padding-left: 0;
+  font-size: 14px;
+  z-index: 1;
+  text-transform: uppercase;
 }
 
 
 
 /* Media query for mobile devices */
-@media all and (min-width:0px) and (max-width: 1024px) {
-	.reslink {
-	  right: 90px;
-	top: 30px;
-	}
+@media (min-width:0px) and (max-width: 1024px) {
+  .reslink {
+    right: 90px;
+    top: 30px;
+  }
 }
 
-.reslink i{
-	display: inline-block;
-	margin: -4px 0px 0px 5px;
-	font-size: 16px;
-	vertical-align: middle;
-	line-height: 24px;
+.reslink i {
+  display: inline-block;
+  margin: -4px 0px 0px 5px;
+  font-size: 16px;
+  vertical-align: middle;
+  line-height: 24px;
 }
 
 .reslink:hover {
-	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.reslink:before{
-	content: '';
-	left: 0px;
-	bottom: 0px;
-	height: 5px;
-	background-color: #d7b39a;
-	width: 80%;
-	position: absolute;
-	z-index: -1;
-	-webkit-border-radius: 0px 50% 15px 0px;
-	border-radius: 0px 50% 15px 0px;
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	transition: all 0.5s linear;	
+.reslink:before {
+  content: '';
+  left: 0px;
+  bottom: 0px;
+  height: 5px;
+  background-color: #d7b39a;
+  width: 80%;
+  position: absolute;
+  z-index: -1;
+  -webkit-border-radius: 0px 50% 15px 0px;
+  border-radius: 0px 50% 15px 0px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
-.reslink:hover:before{
-	background:none;
+
+.reslink:hover:before {
+  background: none;
 }
 
 @-webkit-keyframes focus-in-contract {
   0% {
     letter-spacing: 8px;
     -webkit-filter: blur(8px);
-            filter: blur(8px);
+    filter: blur(8px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
+
 @keyframes focus-in-contract {
   0% {
     letter-spacing: 8px;
     -webkit-filter: blur(8px);
-            filter: blur(8px);
+    filter: blur(8px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
