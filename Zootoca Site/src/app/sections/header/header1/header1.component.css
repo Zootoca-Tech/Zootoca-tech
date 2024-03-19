@@ -148,11 +148,12 @@ button {
     fill: #080808;
   }
   
-  /* CSS to style the button */
+/* ///////////////////////////////// */
 #mobile-side-drawer {
-  color: white; /* Change color to white or any other color you prefer */
-  background-color: white; /* Change background color to a darker shade */
-  border-color: #070505; /* Change border color to match background color */
+  color: white;
+  background-color: white;
+  border-color: #070505;
+  height: 38px;
 }
 
 #mobile-side-drawer:hover {
