@@ -150,11 +150,11 @@ button {
   
   /* CSS to style the button */
 #mobile-side-drawer {
-  color: #fff; /* Change color to white or any other color you prefer */
-  background-color: #f3efef; /* Change background color to a darker shade */
-  border-color: #575353; /* Change border color to match background color */
+  color: white; /* Change color to white or any other color you prefer */
+  background-color: white; /* Change background color to a darker shade */
+  border-color: #070505; /* Change border color to match background color */
 }
 
 #mobile-side-drawer:hover {
-  background-color: #555;
+  background-color: white;
 }
