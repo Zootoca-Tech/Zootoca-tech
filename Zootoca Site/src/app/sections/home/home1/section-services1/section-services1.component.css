@@ -65,14 +65,17 @@ h1 {
 .roll {
   overflow: hidden; /* Ensure the curved corners are visible */
   border-radius: 12px; /* Adjust the radius to your preference */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+  box-shadow: 0 0 5px rgb(255, 255, 255); /* Optional: Add a shadow for depth */
+
 }
 
 .cardimg {
   width: 100%; /* Ensure the image fills the container horizontally */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
   border-radius: 12px;
+
 }
+
 
 @font-face {
   font-family: 'CoreCircus2DDot1';
@@ -298,6 +301,8 @@ h1 {
   transform: translateY(150px);
   opacity: 0;
   transition: all 2s ease;
+  justify-content: center; 
+  display: flex;
   }
   
   .reveal.active {
