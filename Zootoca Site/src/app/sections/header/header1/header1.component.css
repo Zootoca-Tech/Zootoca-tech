@@ -159,3 +159,10 @@ button {
 #mobile-side-drawer:hover {
   background-color: white;
 }
+
+/* ///////////////////////////////// */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
