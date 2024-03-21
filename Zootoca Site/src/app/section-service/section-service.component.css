@@ -25,6 +25,8 @@
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
   text-transform: uppercase;
+  width: 115px;
+  height: 45px;
 }
 
 .btn-23:disabled {
