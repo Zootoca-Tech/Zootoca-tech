@@ -59,7 +59,7 @@ export class PageProjectGrid3ColsComponent implements OnInit {
     image: "https://starbright.co.za/wp-content/uploads/2023/03/Marketing-Agency-in-Pretoria.png",
     title: "Our Clients",
     description: "With creativity as our compass and determination as our fuel, we transform ideas into impactful works that resonate with brilliance and redefine industry standards.",
-    page: "Works"
+    page: "Clients"
   }
 
   footerData = {
