@@ -12,3 +12,29 @@
 	transform: translateY(-1rem);
 	backdrop-filter: blur(1.5rem);
 }
+
+/* //////////////////////////// */
+.reveal {
+	position: relative;
+	transform: translateX(150px);
+	opacity: 0;
+	transition: all 2s ease;
+	}
+	
+	.reveal.active {
+	transform: translateX(0px);
+	opacity: 1;
+	}
+	
+	/* ///////////////////////////// */
+	.Reveal {
+	position: relative;
+	transform: translateX(-150px);
+	opacity: 0;
+	transition: all 2s ease;
+	}
+	
+	.Reveal.active {
+	transform: translateX(0px);
+	opacity: 1;
+	}

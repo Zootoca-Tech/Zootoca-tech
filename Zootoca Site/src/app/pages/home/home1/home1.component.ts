@@ -241,13 +241,17 @@ export class Home1Component implements OnInit {
         subheading: [
           "UI/UX design", 
           "Full stack web development",
-          "Static and dynamic website"
+          "Static and dynamic website",
+          "eCommerce Solutions",
+          "Website Maintenance"
 
           ],
           subescription: [
             "We take an entire responsibility for creating intuitive,engaging and visually appealing digital experience for users.We have an expertize designing team to ensure that design  decisions align goals and technical constraints.",
             "Our team is flexible  and skilled in developing client side web applications.We are also proficient in building server side applications.We are also responsible for production environments and manage the deployment process.",
             " We focus on layout,graphics,adobe photoshop,illustrator to develop the web.We will develop the layouts depending upon the requirements of the projects.",
+            "Our mastery in e-commerce web design services can give your online store a professional nature that can help your company in achieving more deals and incomes for business. Our e- commerce solution consolidates developing an incredible site with features like shopping cart, payment gateway and so on.",
+            "Zootoca encourages you to manage up your site by including new functionalities. Not just that, we can likewise help by redesigning the current site structure to meeting your objectives and provide technical support for your company."
           ]
       },
       {
